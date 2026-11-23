@@ -1,0 +1,1500 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<!-- TEMA TIPOGRÁFICO · FOUC-guard: aplica preferencia persistida antes del primer paint -->
+<script>
+(function(){
+  try{
+    if(localStorage.getItem('kdx_font')==='editorial'){
+      document.documentElement.setAttribute('data-font','editorial');
+      var l=document.createElement('link');l.id='edFonts';l.rel='stylesheet';
+      l.href='https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Syne:wght@400;500;600;700;800&display=swap';
+      document.head.appendChild(l);
+    }
+  }catch(e){}
+})();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kaprekar DigitalX — Inteligencia de Conversión & Arquitectura de Decisiones</title>
+<meta name="description" content="Kaprekar DigitalX convierte la IA Agéntica en crecimiento medible: GEO/AEO, Human-in-the-Loop, First-Party Data y expansión internacional. Consultora de Inteligencia de Conversión & Arquitectura de Decisiones.">
+<meta name="theme-color" content="#05080f">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<meta name="ai-act-compliance" content="EU AI Act (Reg. UE 2024/1689) — Art. 52 Transparencia · plenamente aplicable 02/08/2026">
+<meta name="ai-human-oversight" content="HITL — Validación humana activa conforme Art. 14 Human Oversight">
+<link rel="canonical" href="https://kaprekar.ai/">
+<meta property="og:url" content="https://kaprekar.ai/">
+<meta property="og:title" content="Kaprekar DigitalX — Inteligencia de Conversión & Arquitectura de Decisiones">
+<meta property="og:description" content="IA Agéntica, GEO/AEO, Human-in-the-Loop y First-Party Data. El partner de crecimiento para el CMO de 2026.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Kaprekar DigitalX — Inteligencia de Conversión">
+<meta name="twitter:description" content="IA Agéntica · GEO/AEO · HITL · First-Party Data.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect x='27' y='27' width='46' height='46' rx='8' transform='rotate(45 50 50)' fill='%23d9a441'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"ProfessionalService","@id":"https://kaprekar.ai/#org","name":"Kaprekar DigitalX",
+"url":"https://kaprekar.ai/",
+"description":"Consultora de Inteligencia de Conversión & Arquitectura de Decisiones. IA Agéntica, GEO/AEO, Human-in-the-Loop y First-Party Data.",
+"areaServed":"ES","foundingDate":"2000","slogan":"Como la constante de Kaprekar: reordenamos el caos de datos hasta un resultado inevitable.",
+"address":{"@type":"PostalAddress","addressLocality":"Bilbao","addressRegion":"País Vasco","addressCountry":"ES"},
+"email":"digitalx@kaprekar.ai",
+"knowsAbout":["Generative Engine Optimization","Answer Engine Optimization","IA Agéntica","Human-in-the-Loop","First-Party Data","RGPD","EU AI Act","Schema.org"]},
+{"@type":"FAQPage","@id":"https://kaprekar.ai/#faq","mainEntity":[
+{"@type":"Question","name":"¿Qué es GEO/AEO 2026?","acceptedAnswer":{"@type":"Answer","text":"Es la evolución del posicionamiento hacia la Optimización para Motores de Respuesta: se estructuran datos, contenido y autoridad para que las IAs generativas citen a la marca como la respuesta definitiva ante consultas complejas, en lugar de competir por clics en listas de enlaces."}},
+{"@type":"Question","name":"¿Qué es el modelo Human-in-the-Loop (HITL)?","acceptedAnswer":{"@type":"Answer","text":"Un protocolo donde la IA agéntica ejecuta el 80% del trabajo pesado (análisis, generación, optimización) y el criterio humano senior valida el 20% crítico: estrategia, empatía y aprobación final. Bajo el AI Act europeo es además un diferenciador de compliance directo (Art. 14)."}},
+{"@type":"Question","name":"¿Por qué el First-Party Data es urgente?","acceptedAnswer":{"@type":"Answer","text":"Con la desaparición de las cookies de terceros y el endurecimiento regulatorio, los datos propios son la única infraestructura de activación sostenible. Las marcas con sistemas de datos propios superan entre un 25% y un 40% en ROI atribuible a los rezagados."}},
+{"@type":"Question","name":"¿Cómo afecta la IA agéntica al viaje del comprador?","acceptedAnswer":{"@type":"Answer","text":"La IA agéntica optimiza el viaje del comprador al actuar como un asistente autónomo que personaliza la oferta en tiempo real, reduciendo la fricción y acelerando la conversión mediante una interacción humano-tecnológica fluida."}},
+{"@type":"Question","name":"¿Cómo se financia la transformación?","acceptedAnswer":{"@type":"Answer","text":"Los servicios se empaquetan como proyectos de innovación tecnológica elegibles para subvenciones públicas (SPRI, Diputación Foral de Bizkaia, Red.es), reduciendo la inversión neta entre un 30% y un 80% respecto al precio de mercado. Se gestiona el ciclo completo: línea adecuada, memoria técnica y justificación."}},
+{"@type":"Question","name":"¿Qué incluyen los servicios llave en mano?","acceptedAnswer":{"@type":"Answer","text":"Todos los servicios incluyen dirección estratégica senior, dashboard de performance en tiempo real con predicción de ingresos y revisión mensual ejecutiva. Pueden contratarse por vertical o como ecosistema integrado."}}
+]}]}
+</script>
+<style>
+/* ============ BASE ============ */
+:root{
+  --bg:#05080f;--bg2:#080d18;--panel:#0b1220;--panel2:#0e1626;--line:rgba(148,163,184,.14);--line2:rgba(217,164,65,.28);
+  --gold:#d9a441;--gold2:#f2cd7c;--gold3:#8a6420;--ink:#eef2f8;--muted:#94a0b4;--blue:#6f9fdc;--blue-d:#33506e;--terra:#d97f52;--terra-d:#7a3f24;--r:18px;
+  --font-display:'Sora',sans-serif;
+  --font-body:'Inter',system-ui,sans-serif;
+  --font-mono:'JetBrains Mono',monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-body);background:var(--bg);color:var(--ink);line-height:1.65;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+section[id]{scroll-margin-top:86px}
+h1,h2,h3,h4{font-family:var(--font-display);line-height:1.15;letter-spacing:-.02em}
+a{color:inherit;text-decoration:none}img{max-width:100%}
+::selection{background:rgba(217,164,65,.35)}
+::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:var(--bg2)}::-webkit-scrollbar-thumb{background:#1d2a40;border-radius:6px}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:-9999px;top:0;z-index:100001;background:var(--gold);color:#1a1204;padding:10px 18px;border-radius:0 0 10px 0;font-weight:600}
+.skip:focus{left:0}
+.wrap{max-width:1200px;margin:auto;padding:0 24px}
+.section{padding:100px 0;position:relative}
+.section-alt{background:linear-gradient(180deg,var(--bg2),var(--bg))}
+.eyebrow{font-family:var(--font-mono);font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);display:inline-flex;align-items:center;gap:10px}
+.eyebrow::before{content:'';width:26px;height:1px;background:var(--gold)}
+.sec-head{max-width:820px;margin-bottom:56px}
+.sec-head h2{font-size:clamp(1.9rem,3.6vw,2.9rem);font-weight:700;margin:18px 0 16px}
+.sec-head h2 em{font-style:normal;background:linear-gradient(100deg,var(--gold2),var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{color:var(--muted);font-size:1.06rem;max-width:720px}
+.grid{display:grid;gap:22px}
+.g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+.card{background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:var(--r);padding:28px;transition:border-color .3s,transform .3s}
+.card:hover{border-color:var(--line2);transform:translateY(-3px)}
+.card h3{font-size:1.12rem;margin-bottom:10px}
+.card p{color:var(--muted);font-size:.94rem}
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--font-display);font-weight:600;font-size:.92rem;padding:14px 26px;border-radius:12px;cursor:pointer;border:1px solid transparent;transition:.3s}
+.btn-gold{background:linear-gradient(120deg,var(--gold2),var(--gold));color:#1a1204;box-shadow:0 8px 28px rgba(217,164,65,.25)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 12px 34px rgba(217,164,65,.4)}
+.btn-ghost{border-color:var(--line);color:var(--ink);background:rgba(255,255,255,.02)}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold2)}
+.btn-sm{padding:10px 18px;font-size:.82rem}
+.btn-sweep{position:relative;overflow:hidden;z-index:0;background:transparent;border:1px solid var(--gold);color:var(--gold2)}
+.btn-sweep::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(120deg,var(--gold2),var(--gold));transition:left .45s cubic-bezier(.25,.46,.45,.94);z-index:-1}
+.btn-sweep:hover{color:#1a1204}
+.btn-sweep:hover::before{left:0}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease;transition-delay:var(--d,0s)}
+.reveal.in{opacity:1;transform:none}
+/* ============ A · PRELOADER (+ failsafe CSS) ============ */
+#preloader{position:fixed;inset:0;background:var(--bg);z-index:100000;display:none;flex-direction:column;justify-content:center;align-items:center;transition:opacity .7s ease,visibility .7s}
+#preloader.show{display:flex;animation:preFailsafe 2.6s steps(1,end) forwards}
+@keyframes preFailsafe{99%{opacity:1;visibility:visible}100%{opacity:0;visibility:hidden;pointer-events:none}}
+#preloader.hidden{opacity:0!important;visibility:hidden!important;pointer-events:none!important}
+.pre-logo{font-family:var(--font-display);font-weight:800;letter-spacing:.28em;font-size:clamp(18px,4vw,34px);text-transform:uppercase;overflow:hidden;display:flex;gap:.3em;flex-wrap:wrap;justify-content:center}
+.pre-logo span{display:inline-block;transform:translateY(110%);animation:preUp .7s cubic-bezier(.25,.46,.45,.94) forwards}
+.pre-logo .gold{color:var(--gold);animation-delay:.12s}
+@keyframes preUp{to{transform:none}}
+.pre-bar{width:220px;height:2px;background:rgba(148,163,184,.15);margin-top:30px;overflow:hidden;border-radius:2px}
+.pre-bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--gold3),var(--gold2));transition:width .15s}
+.pre-tag{font-family:var(--font-mono);font-size:.64rem;letter-spacing:.4em;color:var(--muted);margin-top:18px;opacity:0;animation:fadeIn .6s .5s forwards;text-transform:uppercase}
+@keyframes fadeIn{to{opacity:1}}
+body.loading{overflow:hidden}
+/* ============ CURSOR & GRAIN ============ */
+#cursorDot,#cursorRing{position:fixed;top:0;left:0;pointer-events:none;border-radius:50%;opacity:0;z-index:99999}
+html.cursor-on #cursorDot{opacity:1;width:8px;height:8px;background:var(--gold);mix-blend-mode:difference}
+html.cursor-on #cursorRing{opacity:.7;width:38px;height:38px;border:1px solid var(--blue);transition:width .2s,height .2s,border-color .2s}
+html.cursor-on #cursorRing.grow{width:58px;height:58px;border-color:var(--gold2)}
+#grain{position:fixed;inset:0;z-index:800;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.045'/%3E%3C/svg%3E")}
+/* ============ COOKIE ============ */
+#cookieBanner{position:fixed;bottom:24px;left:50%;transform:translate(-50%,150%);width:calc(100% - 32px);max-width:560px;background:rgba(11,18,32,.96);border:1px solid var(--line2);border-radius:16px;padding:22px 24px;z-index:95000;box-shadow:0 20px 60px rgba(0,0,0,.6);backdrop-filter:blur(14px);transition:transform .6s cubic-bezier(.25,1,.5,1)}
+#cookieBanner.show{transform:translate(-50%,0)}
+.ck-title{font-family:var(--font-display);font-weight:700;margin-bottom:8px}
+.ck-text{font-size:.82rem;color:var(--muted);margin-bottom:16px;line-height:1.6}
+.ck-btns{display:flex;gap:10px;justify-content:flex-end;flex-wrap:wrap}
+/* ============ NAV ============ */
+.progress{position:fixed;top:0;left:0;height:3px;width:0;z-index:1000;background:linear-gradient(90deg,var(--gold3),var(--gold2),var(--terra),var(--gold2),var(--gold3));background-size:300% 100%;animation:progFlow 3s linear infinite}
+@keyframes progFlow{to{background-position:300% 0}}
+.nav{position:fixed;top:0;left:0;right:0;z-index:900;backdrop-filter:blur(14px);background:rgba(5,8,15,.72);border-bottom:1px solid transparent;transition:.3s}
+.nav.scrolled{border-bottom-color:var(--line);background:rgba(5,8,15,.9)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:70px}
+.brand{display:flex;align-items:center;gap:12px;font-family:var(--font-display);font-weight:700;letter-spacing:.04em}
+.brand-mark{width:20px;height:20px;background:linear-gradient(135deg,var(--gold2),var(--gold));transform:rotate(45deg);border-radius:4px;position:relative;flex-shrink:0}
+.brand-mark::after{content:'';position:absolute;inset:5px;background:var(--bg);border-radius:2px}
+.brand-txt{font-size:1.02rem}
+.brand-txt em{font-style:normal;color:var(--gold);font-weight:500;margin-left:6px}
+.nav-links{display:flex;align-items:center;gap:30px;font-size:.9rem;color:var(--muted)}
+.nav-links a:not(.btn):hover{color:var(--gold2)}
+.nav-links a.active{color:var(--gold2)}
+.nav-right{display:flex;align-items:center;gap:12px}
+.font-toggle{display:grid;place-items:center;width:38px;height:38px;border:1px solid var(--line);background:var(--panel);color:var(--muted);border-radius:10px;cursor:pointer;font-family:var(--font-mono);font-size:.78rem;transition:.3s}
+.font-toggle:hover{border-color:var(--gold);color:var(--gold2)}
+.font-toggle[aria-pressed="true"]{border-color:var(--gold);color:var(--gold2);background:rgba(217,164,65,.08)}
+.burger{display:none;background:none;border:0;cursor:pointer;padding:8px}
+.burger span{display:block;width:22px;height:2px;background:var(--ink);margin:5px 0;transition:.3s}
+/* ============ HERO ============ */
+.hero{min-height:100vh;display:flex;align-items:center;padding:130px 0 80px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(148,163,184,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(148,163,184,.055) 1px,transparent 1px);background-size:54px 54px;-webkit-mask-image:radial-gradient(ellipse at 55% 35%,#000 25%,transparent 72%);mask-image:radial-gradient(ellipse at 55% 35%,#000 25%,transparent 72%)}
+.glow{position:absolute;border-radius:50%;filter:blur(90px);opacity:.16;pointer-events:none}
+.glow.g1{width:560px;height:560px;background:var(--gold);top:-180px;right:-120px}
+.glow.g2{width:480px;height:480px;background:var(--blue);bottom:-200px;left:-140px}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center;position:relative}
+.hero h1{font-size:clamp(2.3rem,4.6vw,3.7rem);font-weight:800;margin:22px 0 20px}
+.hero h1 em{font-style:normal;background:linear-gradient(100deg,var(--gold2),var(--gold) 60%,var(--terra));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .sub{color:var(--muted);font-size:1.08rem;max-width:600px;margin-bottom:34px}
+.hero-cta{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:30px}
+.trust-line{font-family:var(--font-mono);font-size:.74rem;color:var(--muted);letter-spacing:.06em;display:flex;gap:18px;flex-wrap:wrap}
+.trust-line b{color:var(--gold2);font-weight:600}
+.scroll-ind{position:absolute;bottom:26px;left:24px;display:flex;align-items:center;gap:12px;font-family:var(--font-mono);font-size:.6rem;letter-spacing:.3em;color:var(--muted);text-transform:uppercase}
+.scroll-ind::before{content:'';width:1px;height:42px;background:linear-gradient(180deg,var(--gold),transparent);animation:scrollPulse 2.2s infinite}
+@keyframes scrollPulse{0%,100%{transform:scaleY(.35);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}}
+.orbit{position:relative;width:min(520px,100%);aspect-ratio:1;margin:auto}
+.o-cross{position:absolute;left:50%;top:0;bottom:0;width:1px;background:linear-gradient(180deg,transparent,rgba(148,163,184,.35),transparent)}
+.o-cross.h{top:50%;left:0;right:0;height:1px;width:auto;background:linear-gradient(90deg,transparent,rgba(148,163,184,.35),transparent)}
+.o-ring{position:absolute;inset:0;border:1px dashed rgba(148,163,184,.28);border-radius:50%;animation:spin 48s linear infinite}
+.o-ring.r2{inset:13%;border-color:rgba(217,164,65,.35);animation-duration:34s;animation-direction:reverse}
+.o-ring.r3{inset:27%;border-color:rgba(111,159,220,.4);animation-duration:24s}
+.o-dot{position:absolute;width:11px;height:11px;border-radius:50%;background:var(--gold);box-shadow:0 0 14px rgba(217,164,65,.9)}
+.o-dot.b{background:var(--blue);box-shadow:0 0 14px rgba(111,159,220,.9)}
+.o-dot.t{background:var(--terra);box-shadow:0 0 14px rgba(217,127,82,.9)}
+.o-dot.d1{top:-5px;left:calc(50% - 5px)}.o-dot.d2{top:calc(50% - 5px);right:-5px}.o-dot.d3{bottom:-5px;left:calc(50% - 5px)}
+.o-core{position:absolute;inset:39%;border-radius:50%;background:radial-gradient(circle at 32% 28%,var(--gold2),var(--gold) 55%,var(--gold3));display:grid;place-items:center;box-shadow:0 0 60px rgba(217,164,65,.4);animation:pulse 4s ease-in-out infinite}
+.o-core span{font-family:var(--font-display);font-weight:800;font-size:clamp(1.2rem,2.6vw,1.8rem);color:#1a1204}
+.o-chip{position:absolute;font-family:var(--font-mono);font-size:.68rem;letter-spacing:.12em;padding:8px 14px;border-radius:100px;background:rgba(11,18,32,.85);border:1px solid var(--line2);color:var(--gold2);white-space:nowrap;animation:bob 6s ease-in-out infinite}
+.o-chip.blue{border-color:rgba(111,159,220,.4);color:#a9c6ea}
+.o-chip.c1{top:2%;left:2%}.o-chip.c2{top:14%;right:0}.o-chip.c3{bottom:16%;left:-2%;animation-delay:1.4s}.o-chip.c4{bottom:2%;right:8%;animation-delay:.7s}.o-chip.c5{top:44%;right:-6%;animation-delay:2.1s}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes bob{50%{transform:translateY(-9px)}}
+@keyframes pulse{50%{box-shadow:0 0 90px rgba(217,164,65,.6)}}
+/* ============ MARQUEE BIDIRECCIONAL ============ */
+.marquee{position:relative;overflow:hidden;background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:22px 0;display:flex;flex-direction:column;gap:12px}
+.mq-row{overflow:hidden}
+.mq-track{display:flex;align-items:center;width:max-content;animation:mq var(--mq-dur,46s) linear infinite;will-change:transform;transform:translate3d(0,0,0)}
+.mq-track.rev{animation-direction:reverse}
+.marquee:hover .mq-track{animation-play-state:paused}
+@keyframes mq{to{transform:translate3d(-50%,0,0)}}
+.mq-item{font-family:var(--font-display);font-weight:800;text-transform:uppercase;font-size:clamp(24px,4vw,52px);letter-spacing:-.02em;line-height:1.1;white-space:nowrap;padding:0 28px;color:var(--ink)}
+.mq-item.outline{color:transparent;-webkit-text-stroke:1px rgba(217,164,65,.55)}
+.mq-item.gold{color:var(--gold2)}
+.mq-sep{width:11px;height:11px;background:var(--gold);transform:rotate(45deg);flex-shrink:0}
+.mq-sep.sm{width:6px;height:6px}
+.mq-mini{font-family:var(--font-mono);font-weight:500;font-size:clamp(11px,1.4vw,14px);letter-spacing:.22em;text-transform:uppercase;color:var(--muted);white-space:nowrap;padding:0 22px}
+.mq-row-b .mq-mini:nth-child(4n+3){color:var(--gold2)}
+.marquee::before,.marquee::after{content:'';position:absolute;top:0;bottom:0;width:14vw;z-index:3;pointer-events:none}
+.marquee::before{left:0;background:linear-gradient(90deg,var(--bg2),transparent)}
+.marquee::after{right:0;background:linear-gradient(270deg,var(--bg2),transparent)}
+/* ============ STATS ============ */
+.stats{padding:70px 0}
+.stat{border-left:2px solid var(--line2);padding:6px 0 6px 22px}
+.stat b{display:block;font-family:var(--font-display);font-size:clamp(1.9rem,3.4vw,2.7rem);font-weight:800;color:var(--gold2);line-height:1.1}
+.stat span{color:var(--muted);font-size:.88rem;display:block;margin-top:8px}
+/* ============ PARADOJA ============ */
+.dual{display:grid;grid-template-columns:1fr auto 1fr;align-items:stretch}
+.dual-card{padding:36px;border-radius:var(--r);position:relative}
+.dual-card.machine{background:linear-gradient(160deg,rgba(51,80,110,.32),var(--panel));border:1px solid rgba(111,159,220,.3)}
+.dual-card.human{background:linear-gradient(200deg,rgba(122,63,36,.32),var(--panel));border:1px solid rgba(217,127,82,.3)}
+.dual-tag{font-family:var(--font-mono);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;display:inline-block;padding:6px 12px;border-radius:100px;margin-bottom:18px}
+.machine .dual-tag{background:rgba(111,159,220,.14);color:#a9c6ea;border:1px solid rgba(111,159,220,.35)}
+.human .dual-tag{background:rgba(217,127,82,.14);color:#eeb397;border:1px solid rgba(217,127,82,.35)}
+.dual-card h3{font-size:1.35rem;margin-bottom:6px}
+.dual-card .sub2{font-size:.9rem;color:var(--gold2);margin-bottom:14px;font-weight:600}
+.dual-card p{color:var(--muted);font-size:.94rem}
+.dual-mid{display:flex;align-items:center;padding:0 26px}
+.dual-mid span{writing-mode:vertical-rl;font-family:var(--font-mono);font-size:.72rem;letter-spacing:.3em;color:var(--gold);text-transform:uppercase;border:1px solid var(--line2);border-radius:100px;padding:20px 10px;background:rgba(217,164,65,.06)}
+.paradox-bar{margin-top:34px;border:1px solid var(--line2);border-radius:100px;padding:18px 28px;text-align:center;font-family:var(--font-display);background:rgba(217,164,65,.05)}
+.paradox-bar b{color:var(--gold2)}
+/* ============ PROBLEMA ============ */
+.pas-num{font-family:var(--font-mono);color:var(--terra);font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;display:block;margin-bottom:12px}
+.pas-card h3{font-size:clamp(1.3rem,2.4vw,1.75rem);margin-bottom:14px}
+.pas-card p{color:var(--muted)}
+.bigstats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:44px}
+.bs{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:22px}
+.bs b{font-family:var(--font-display);font-size:1.7rem;color:var(--terra);display:block}
+.bs span{font-size:.82rem;color:var(--muted)}
+/* ============ SOLUCIÓN ============ */
+.weights{display:grid;gap:16px;margin:44px 0}
+.w-row{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:20px 24px}
+.w-top{display:flex;justify-content:space-between;align-items:baseline;gap:14px;margin-bottom:12px;flex-wrap:wrap}
+.w-top h3{font-size:1.05rem}
+.w-top b{font-family:var(--font-display);color:var(--gold2);font-size:1.15rem}
+.w-bar{height:7px;border-radius:100px;background:rgba(148,163,184,.12);overflow:hidden}
+.w-bar i{display:block;height:100%;width:0;border-radius:100px;background:linear-gradient(90deg,var(--gold3),var(--gold2));transition:width 1.4s cubic-bezier(.2,.8,.2,1)}
+.w-row p{color:var(--muted);font-size:.9rem;margin-top:12px}
+.cmp{width:100%;border-collapse:collapse;font-size:.9rem}
+.cmp th,.cmp td{padding:16px 18px;text-align:left;border-bottom:1px solid var(--line)}
+.cmp thead th{font-family:var(--font-display);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);background:rgba(148,163,184,.06)}
+.cmp thead th.hi{color:#1a1204;background:linear-gradient(120deg,var(--gold2),var(--gold))}
+.cmp td.hi{background:rgba(217,164,65,.07);color:var(--ink);font-weight:500}
+.cmp td:first-child{color:var(--ink);font-weight:600}
+.cmp td{color:var(--muted)}
+/* ============ B · LUZ ESPECULAR ============ */
+.card,.svc{position:relative;overflow:hidden}
+.card::before,.svc::before{content:'';position:absolute;inset:0;z-index:0;pointer-events:none;background:radial-gradient(420px circle at var(--mx,50%) var(--my,0%),rgba(217,164,65,.10),transparent 42%);opacity:0;transition:opacity .3s ease}
+.card:hover::before,.svc:hover::before{opacity:1}
+.card>*,.svc>*{position:relative;z-index:1}
+/* ============ MOTOR ============ */
+.motor{display:grid;grid-template-columns:340px 1fr;gap:36px;align-items:start}
+.m-steps{display:grid;gap:10px}
+.m-step{display:flex;gap:16px;align-items:center;text-align:left;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 18px;cursor:pointer;color:var(--muted);font-family:var(--font-display);font-size:.92rem;transition:.3s}
+.m-step .n{font-family:var(--font-mono);color:var(--gold);font-size:.8rem;border:1px solid var(--line2);border-radius:8px;width:34px;height:34px;display:grid;place-items:center;flex-shrink:0}
+.m-step.on{border-color:var(--gold);color:var(--ink);background:rgba(217,164,65,.07)}
+.m-step span small{display:block;font-family:var(--font-body);font-size:.76rem;color:var(--muted);font-weight:400;margin-top:2px}
+.m-panel{background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:var(--r);padding:36px;min-height:380px}
+.m-pane{display:none}
+.m-pane.on{display:block;animation:fade .5s ease}
+.m-pane h3{font-size:1.5rem;margin-bottom:6px}
+.m-pane .tag{color:var(--gold2);font-style:italic;margin-bottom:16px;display:block}
+.m-pane p{color:var(--muted);margin-bottom:20px}
+.m-pane ul{list-style:none;display:grid;gap:10px}
+.m-pane li{padding-left:24px;position:relative;font-size:.93rem}
+.m-pane li::before{content:'◆';position:absolute;left:0;color:var(--gold);font-size:.7rem;top:4px}
+@keyframes fade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+/* ============ HITL ============ */
+.hitl-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;margin-bottom:50px}
+.donut-wrap{display:flex;flex-direction:column;align-items:center;gap:20px}
+.donut{width:min(300px,80vw);aspect-ratio:1;border-radius:50%;background:conic-gradient(var(--blue) 0 288deg,var(--terra) 288deg 360deg);position:relative;box-shadow:0 0 50px rgba(111,159,220,.15)}
+.donut::before{content:'';position:absolute;inset:21%;background:var(--bg2);border-radius:50%;border:1px solid var(--line)}
+.donut-center{position:absolute;inset:21%;display:grid;place-items:center;text-align:center;z-index:2}
+.donut-center b{font-family:var(--font-display);font-size:1.25rem}
+.donut-center span{font-size:.7rem;color:var(--muted);font-family:var(--font-mono)}
+.donut-legend{display:flex;gap:22px;font-family:var(--font-mono);font-size:.72rem;flex-wrap:wrap;justify-content:center}
+.donut-legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:7px}
+.funnel{display:flex;flex-direction:column;align-items:center;gap:8px}
+.f-block{border-radius:14px;padding:18px 22px;text-align:center;border:1px solid var(--line)}
+.f-block strong{font-family:var(--font-display);display:block;font-size:1rem;margin-bottom:4px}
+.f-block span{font-size:.8rem;color:var(--muted)}
+.f-block.b1{width:100%;background:rgba(111,159,220,.12);border-color:rgba(111,159,220,.4)}
+.f-block.b2{width:78%;background:rgba(217,164,65,.08);border-color:var(--line2)}
+.f-block.b3{width:56%;background:rgba(217,127,82,.14);border-color:rgba(217,127,82,.45)}
+.f-arrow{color:var(--gold);font-size:.8rem}
+.duo{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;margin-bottom:50px}
+.duo>div{padding:22px 26px}
+.duo .dh{font-family:var(--font-display);font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;padding:16px 26px}
+.duo .dh.a{background:rgba(111,159,220,.16);color:#a9c6ea}
+.duo .dh.b{background:rgba(217,164,65,.14);color:var(--gold2)}
+.duo ul{list-style:none;display:grid}
+.duo li{padding:13px 26px;border-top:1px solid var(--line);font-size:.9rem}
+.duo .col-a li{color:var(--muted)}
+.duo .col-b li{color:var(--ink);font-weight:500;background:rgba(217,164,65,.04)}
+.trust-eq{display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;padding:30px;border:1px dashed var(--line2);border-radius:var(--r);background:rgba(217,164,65,.04)}
+.te-chip{font-family:var(--font-display);font-weight:600;padding:14px 22px;border-radius:12px;font-size:.92rem}
+.te-chip.a{background:rgba(111,159,220,.14);border:1px solid rgba(111,159,220,.4)}
+.te-chip.b{background:rgba(217,127,82,.14);border:1px solid rgba(217,127,82,.4)}
+.te-chip.c{background:linear-gradient(120deg,var(--gold2),var(--gold));color:#1a1204}
+.te-op{font-family:var(--font-display);font-size:1.4rem;color:var(--muted)}
+/* ============ SEARCH ============ */
+.evo{display:grid;grid-template-columns:1fr auto 1fr;gap:20px;align-items:center;margin-bottom:44px}
+.evo-card{padding:28px;border-radius:var(--r)}
+.evo-card.old{background:var(--panel);border:1px solid var(--line);opacity:.85}
+.evo-card.new{background:linear-gradient(160deg,rgba(122,63,36,.25),var(--panel2));border:1px solid var(--line2)}
+.evo-tag{font-family:var(--font-mono);font-size:.66rem;letter-spacing:.2em;padding:5px 12px;border-radius:100px;display:inline-block;margin-bottom:14px;text-transform:uppercase}
+.old .evo-tag{background:rgba(148,163,184,.12);color:var(--muted)}
+.new .evo-tag{background:rgba(217,164,65,.16);color:var(--gold2)}
+.evo-card h4{margin-bottom:8px}
+.evo-card p{color:var(--muted);font-size:.9rem}
+.evo-arrow{font-size:1.6rem;color:var(--gold);text-align:center}
+.chips{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:44px}
+.chips span{font-family:var(--font-mono);font-size:.74rem;padding:9px 16px;border-radius:100px;border:1px solid var(--line);color:var(--muted);background:var(--panel)}
+.chips span b{color:var(--gold2)}
+.strategy{margin-top:34px;border:1px solid var(--line2);border-radius:var(--r);padding:30px;background:rgba(217,164,65,.05)}
+.strategy h4{color:var(--gold2);margin-bottom:14px;font-size:1.05rem}
+.strategy ol{margin-left:20px;color:var(--muted);display:grid;gap:8px;font-size:.94rem}
+/* ============ DATA ============ */
+.dflow{display:flex;align-items:stretch;gap:14px;flex-wrap:wrap;margin-bottom:44px}
+.df-node{flex:1;min-width:210px;background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:22px}
+.df-node.engine{border-color:rgba(111,159,220,.45);background:rgba(111,159,220,.07)}
+.df-node.target{border-color:var(--line2);background:rgba(217,164,65,.06)}
+.df-node h4{font-size:.98rem;margin-bottom:6px}
+.df-node p{font-size:.82rem;color:var(--muted)}
+.df-plus,.df-arrow{align-self:center;font-family:var(--font-display);font-size:1.3rem;color:var(--gold);flex-shrink:0}
+.imperative{border:1px solid var(--line2);border-radius:14px;padding:20px 28px;text-align:center;font-family:var(--font-display);background:rgba(217,164,65,.05);margin-bottom:44px}
+.imperative b{color:var(--gold2)}
+/* ============ FLYWHEEL ============ */
+.fw{position:relative;width:min(600px,100%);aspect-ratio:1;margin:auto}
+.fw-ring{position:absolute;inset:7%;border:1px dashed rgba(217,164,65,.35);border-radius:50%;animation:spin 70s linear infinite}
+.fw-core{position:absolute;inset:35%;border-radius:50%;background:radial-gradient(circle at 30% 25%,#2a3d5c,var(--panel));border:1px solid var(--line2);display:grid;place-items:center;text-align:center;padding:16px;z-index:3}
+.fw-core b{font-family:var(--font-display);font-size:1.05rem;color:var(--gold2)}
+.fw-node{position:absolute;width:185px;background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:14px;padding:14px 16px;transform:translate(-50%,-50%);z-index:2}
+.fw-node .fn{font-family:var(--font-mono);font-size:.66rem;color:var(--gold);letter-spacing:.16em;display:block;margin-bottom:4px}
+.fw-node strong{font-family:var(--font-display);font-size:.86rem;display:block;margin-bottom:3px}
+.fw-node span{font-size:.72rem;color:var(--muted);display:block;line-height:1.4}
+.fw-node.n1{left:50%;top:13%}.fw-node.n2{left:84%;top:38%}.fw-node.n3{left:71%;top:80%}.fw-node.n4{left:29%;top:80%}.fw-node.n5{left:16%;top:38%}
+/* ============ SERVICIOS ============ */
+.s-tabs{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:36px}
+.s-tab{font-family:var(--font-display);font-size:.86rem;font-weight:600;padding:12px 20px;border-radius:12px;border:1px solid var(--line);background:var(--panel);color:var(--muted);cursor:pointer;transition:.3s}
+.s-tab.on{border-color:var(--gold);color:var(--gold2);background:rgba(217,164,65,.08)}
+.s-panel{display:none}
+.s-panel.on{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;animation:fade .5s ease}
+.svc{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:24px;transition:.3s}
+.svc:hover{border-color:var(--line2)}
+.svc-num{position:absolute;top:2px;right:12px;font-family:var(--font-display);font-weight:800;font-size:64px;line-height:1;color:rgba(217,164,65,.08);pointer-events:none;z-index:1}
+.svc h3{font-size:1.02rem;display:flex;justify-content:space-between;gap:12px;align-items:flex-start;margin-bottom:8px}
+.tier{font-family:var(--font-mono);font-size:.62rem;letter-spacing:.14em;padding:5px 10px;border-radius:100px;white-space:nowrap;flex-shrink:0;text-transform:uppercase}
+.tier.core{background:rgba(111,159,220,.14);color:#a9c6ea;border:1px solid rgba(111,159,220,.35)}
+.tier.premium{background:rgba(217,164,65,.15);color:var(--gold2);border:1px solid var(--line2)}
+.tier.enterprise{background:rgba(217,127,82,.14);color:#eeb397;border:1px solid rgba(217,127,82,.4)}
+.svc p{color:var(--muted);font-size:.88rem;margin-bottom:12px}
+.svc .ret{font-family:var(--font-mono);font-size:.7rem;color:var(--gold2);letter-spacing:.1em}
+/* ============ HERRAMIENTAS ============ */
+.tool-card{background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:var(--r);padding:30px;display:flex;flex-direction:column}
+.tool-head{display:flex;gap:16px;margin-bottom:24px;align-items:flex-start}
+.tool-icon{width:46px;height:46px;border-radius:12px;background:linear-gradient(135deg,var(--gold2),var(--gold));display:grid;place-items:center;color:#1a1204;font-size:1.2rem;flex-shrink:0;font-family:var(--font-display);font-weight:800}
+.tool-head h3{font-size:1.15rem}
+.tool-head p{color:var(--muted);font-size:.86rem;margin-top:4px}
+.t-progress{display:flex;justify-content:space-between;font-family:var(--font-mono);font-size:.72rem;color:var(--muted);letter-spacing:.1em;margin-bottom:10px}
+.t-dots{display:flex;gap:6px;margin-bottom:20px}
+.t-dots i{width:26px;height:5px;border-radius:4px;background:rgba(148,163,184,.18);transition:.3s}
+.t-dots i.on{background:linear-gradient(90deg,var(--gold3),var(--gold2))}
+.t-q{font-family:var(--font-display);font-size:1.02rem;font-weight:600;margin-bottom:18px}
+.t-opts{display:grid;gap:10px}
+.t-opt{display:flex;gap:14px;align-items:center;text-align:left;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;color:var(--ink);font-family:var(--font-body);font-size:.9rem;cursor:pointer;transition:.25s}
+.t-opt:hover{border-color:var(--gold);background:rgba(217,164,65,.06)}
+.t-key{width:28px;height:28px;border-radius:8px;border:1px solid var(--line2);display:grid;place-items:center;font-family:var(--font-mono);font-size:.72rem;color:var(--gold2);flex-shrink:0}
+.t-back{background:none;border:0;color:var(--muted);font-size:.82rem;margin-top:16px;cursor:pointer;font-family:var(--font-body)}
+.t-back:hover{color:var(--gold2)}
+.t-result{text-align:center}
+.t-ring{position:relative;width:150px;margin:0 auto 20px}
+.t-ring svg{transform:rotate(-90deg)}
+.t-ring .track{fill:none;stroke:rgba(148,163,184,.15);stroke-width:9}
+.t-ring .fill{fill:none;stroke:var(--gold);stroke-width:9;stroke-linecap:round;stroke-dasharray:327;stroke-dashoffset:327;transition:stroke-dashoffset 1.6s cubic-bezier(.2,.8,.2,1)}
+.t-score{position:absolute;inset:0;display:grid;place-items:center;font-family:var(--font-display);font-weight:800;font-size:1.7rem}
+.t-score small{font-size:.8rem;color:var(--muted);font-weight:400}
+.t-tier{font-family:var(--font-display);font-size:1.2rem;color:var(--gold2);margin-bottom:10px}
+.t-desc{color:var(--muted);font-size:.92rem;margin-bottom:14px}
+.t-rec{background:rgba(217,164,65,.07);border:1px solid var(--line2);border-radius:12px;padding:14px;font-size:.88rem;margin-bottom:20px}
+.t-rec b{color:var(--gold2)}
+.calc-grid{display:grid;gap:22px}
+.calc-inputs{display:grid;gap:14px}
+.calc-inputs label{display:flex;flex-direction:column;gap:6px;font-size:.82rem;color:var(--muted)}
+.calc-inputs input[type=number]{background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:11px 14px;color:var(--ink);font-family:var(--font-display);font-size:.95rem}
+.calc-inputs input:focus{outline:none;border-color:var(--gold)}
+.opt-label{background:rgba(111,159,220,.06);border:1px solid rgba(111,159,220,.3);border-radius:12px;padding:14px}
+.opt-label output{color:#a9c6ea;font-family:var(--font-display);font-weight:700}
+input[type=range]{width:100%;accent-color:var(--gold);margin-top:6px}
+.cr-cols{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.cr-col{border:1px solid var(--line);border-radius:12px;padding:16px;background:var(--bg2)}
+.cr-col.hi{border-color:var(--line2);background:rgba(217,164,65,.05)}
+.cr-col h4{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:12px;font-family:var(--font-display)}
+.cr-col.hi h4{color:var(--gold2)}
+.cr-row{display:flex;justify-content:space-between;font-size:.82rem;padding:7px 0;border-top:1px solid rgba(148,163,184,.08);color:var(--muted)}
+.cr-row b{color:var(--ink);font-family:var(--font-display)}
+.cr-col.hi .cr-row b{color:var(--gold2)}
+.cr-delta{border:1px dashed var(--line2);border-radius:12px;padding:16px 20px;font-size:.9rem;background:rgba(217,164,65,.04)}
+.cr-delta b{color:var(--gold2)}
+/* ============ CHINA ============ */
+.cn-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-bottom:44px}
+.cn-layers{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.cn-node{position:relative;background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:32px 26px 26px}
+.cn-node::before{content:attr(data-layer);position:absolute;top:-13px;left:24px;font-family:var(--font-mono);font-size:.64rem;letter-spacing:.18em;padding:6px 14px;border-radius:100px;background:var(--terra-d);color:#f6c9ac;text-transform:uppercase}
+.cn-node h3{font-size:1.1rem;margin-bottom:8px}
+.cn-node p{color:var(--muted);font-size:.9rem}
+/* ============ ABM ============ */
+.abm-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.abm-visual{position:relative;width:min(440px,100%);aspect-ratio:1;margin:auto}
+.abm-ring{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);border-radius:50%;border:1px solid var(--line)}
+.abm-ring.r3{width:100%;height:100%;border-color:rgba(148,163,184,.3)}
+.abm-ring.r2{width:66%;height:66%;border-color:rgba(217,164,65,.4)}
+.abm-ring.r1{width:34%;height:34%;border-color:rgba(217,127,82,.5)}
+.abm-label{position:absolute;left:50%;transform:translateX(-50%);font-family:var(--font-mono);font-size:.62rem;letter-spacing:.12em;padding:6px 14px;border-radius:100px;background:var(--bg2);border:1px solid var(--line);white-space:nowrap;text-transform:uppercase;color:var(--muted)}
+.r3 .abm-label{top:-13px}
+.r2 .abm-label{top:-13px;color:var(--gold2);border-color:var(--line2)}
+.r1 .abm-label{top:-13px;color:#eeb397;border-color:rgba(217,127,82,.4)}
+.abm-core{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:56px;height:56px;border-radius:50%;background:radial-gradient(circle,var(--terra),var(--terra-d));box-shadow:0 0 34px rgba(217,127,82,.5)}
+.tier-list{display:grid;gap:14px;margin-bottom:26px}
+.tier-item{display:flex;gap:16px;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 20px}
+.tier-item .tn{font-family:var(--font-display);font-weight:800;color:var(--gold2);font-size:1.3rem;flex-shrink:0}
+.tier-item p{font-size:.87rem;color:var(--muted)}
+.tier-item p b{color:var(--ink)}
+/* ============ FIN / ROADMAP ============ */
+.fin-table{margin-bottom:30px}
+.note-box{border:1px dashed var(--line2);border-radius:14px;padding:20px 26px;background:rgba(217,164,65,.05);color:var(--muted);font-size:.94rem}
+.note-box b{color:var(--gold2)}
+.road{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.road-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:30px}
+.road-card .rn{font-family:var(--font-display);font-size:2.4rem;font-weight:800;background:linear-gradient(120deg,var(--gold2),var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent;opacity:.9}
+.road-card h3{margin:8px 0 4px}
+.road-card .ph{font-family:var(--font-mono);font-size:.7rem;color:var(--muted);letter-spacing:.14em;display:block;margin-bottom:16px;text-transform:uppercase}
+.road-card ul{list-style:none;display:grid;gap:9px}
+.road-card li{padding-left:22px;position:relative;font-size:.86rem;color:var(--muted)}
+.road-card li::before{content:'→';position:absolute;left:0;color:var(--gold)}
+.road-tag{text-align:center;margin-top:40px;font-family:var(--font-display);font-size:1.05rem}
+.road-tag b{color:var(--gold2)}
+/* ============ CASOS ============ */
+.rating{display:inline-flex;align-items:center;gap:12px;border:1px solid var(--line2);border-radius:100px;padding:10px 22px;font-family:var(--font-display);margin-bottom:40px;background:rgba(217,164,65,.06)}
+.rating b{color:var(--gold2);font-size:1.1rem}
+.rating span{font-size:.82rem;color:var(--muted)}
+.quote{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:28px;position:relative;overflow:hidden}
+.quote .qt{font-family:var(--font-display);color:var(--gold2);font-size:.95rem;margin-bottom:12px}
+.quote p{font-size:.92rem;color:var(--muted);font-style:italic;margin-bottom:16px}
+.quote .who{font-family:var(--font-mono);font-size:.72rem;letter-spacing:.08em}
+.tilt{transform-style:preserve-3d;transition:transform .15s ease-out;will-change:transform}
+.tilt .glare{position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at var(--gx,30%) var(--gy,30%),rgba(242,205,124,.15),transparent 55%);opacity:0;transition:opacity .3s}
+.tilt:hover .glare{opacity:1}
+/* ============ FAQ ============ */
+.faq{max-width:860px;margin:auto}
+.faq-item{border:1px solid var(--line);border-radius:14px;margin-bottom:14px;background:var(--panel);overflow:hidden}
+.faq-q{width:100%;background:none;border:0;color:var(--ink);font-family:var(--font-display);font-size:1rem;font-weight:600;text-align:left;padding:20px 24px;cursor:pointer;display:flex;justify-content:space-between;gap:16px;align-items:center}
+.faq-q::after{content:'+';font-size:1.3rem;color:var(--gold);transition:.3s;flex-shrink:0}
+.faq-item.open .faq-q::after{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s ease;color:var(--muted);font-size:.92rem}
+.faq-a div{padding:0 24px 20px}
+/* ============ CTA / CONTACTO ============ */
+.cta-quote{text-align:center;max-width:820px;margin:0 auto 70px}
+.cta-quote .big{font-family:var(--font-display);font-size:clamp(1.5rem,3vw,2.3rem);font-weight:700;margin-bottom:20px}
+.cta-quote .big em{font-style:normal;color:var(--gold2)}
+.cta-quote p{color:var(--muted)}
+.cta-strip{display:inline-block;margin-top:26px;background:linear-gradient(120deg,var(--gold2),var(--gold));color:#1a1204;font-family:var(--font-display);font-weight:700;padding:12px 28px;border-radius:12px;font-size:1.05rem}
+.contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:40px;align-items:start}
+.next-steps{list-style:none;display:grid;gap:14px;margin-top:26px}
+.next-steps li{display:flex;gap:14px;font-size:.9rem;color:var(--muted)}
+.next-steps li i{width:26px;height:26px;border-radius:50%;border:1px solid var(--line2);display:grid;place-items:center;font-style:normal;font-family:var(--font-mono);font-size:.68rem;color:var(--gold2);flex-shrink:0}
+.form-card{background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line2);border-radius:var(--r);padding:34px}
+.form-card h3{margin-bottom:6px}
+.form-card .fs{color:var(--muted);font-size:.88rem;margin-bottom:24px}
+.f-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.form-card label{display:flex;flex-direction:column;gap:6px;font-size:.8rem;color:var(--muted);margin-bottom:14px}
+.fg{position:relative}
+.fg .formLine{position:absolute;left:0;bottom:0;height:2px;width:0;background:linear-gradient(90deg,var(--gold3),var(--gold2));transition:width .45s cubic-bezier(.25,.46,.45,.94);pointer-events:none}
+.fg input:focus~.formLine,.fg select:focus~.formLine,.fg textarea:focus~.formLine{width:100%}
+.form-card input,.form-card select,.form-card textarea{background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:12px 14px;color:var(--ink);font-family:var(--font-body);font-size:.92rem;width:100%}
+.form-card textarea{resize:vertical;min-height:90px}
+.form-card input:focus,.form-card select:focus,.form-card textarea:focus{outline:none;border-color:var(--gold)}
+.form-ok{text-align:center;padding:40px 10px;display:none}
+.form-ok b{display:block;font-family:var(--font-display);font-size:1.3rem;color:var(--gold2);margin-bottom:10px}
+/* ============ FOOTER ============ */
+footer{position:relative;border-top:1px solid var(--line2);background:linear-gradient(180deg,var(--bg2),#03050a);padding:70px 0 34px;overflow:hidden}
+.f-glow{position:absolute;top:0;left:50%;transform:translateX(-50%);width:72%;height:140px;background:radial-gradient(100% 100% at 50% 0%,rgba(217,164,65,.10),rgba(111,159,220,.04) 55%,transparent);pointer-events:none}
+.f-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;margin-bottom:44px;position:relative;z-index:2}
+.f-grid h4{font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold2);margin-bottom:16px;font-family:var(--font-display)}
+.f-grid ul{list-style:none;display:grid;gap:9px;font-size:.88rem;color:var(--muted)}
+.f-grid a:hover{color:var(--gold2)}
+.f-tag{color:var(--muted);font-size:.9rem;margin-top:16px;max-width:340px}
+.f-const{font-family:var(--font-mono);font-size:.72rem;color:var(--gold);margin-top:14px;letter-spacing:.06em}
+.trajectory-badge{display:inline-block;font-family:var(--font-mono);font-size:.62rem;letter-spacing:.16em;color:var(--gold2);border:1px solid var(--line2);background:rgba(217,164,65,.06);padding:6px 12px;border-radius:6px;text-transform:uppercase;margin-top:18px}
+.trajectory-year{display:block;font-size:.78rem;color:var(--muted);margin-top:8px}
+.f-status{display:inline-flex;align-items:center;gap:9px;background:rgba(16,185,129,.06);border:1px solid rgba(16,185,129,.25);padding:7px 13px;border-radius:8px;margin-top:16px}
+.f-status .dot{width:7px;height:7px;background:#10b981;border-radius:50%;position:relative;flex-shrink:0}
+.f-status .dot::after{content:'';position:absolute;inset:-4px;border:1px solid #10b981;border-radius:50%;animation:pulseStatus 2s ease-out infinite}
+@keyframes pulseStatus{0%{transform:scale(.5);opacity:1}100%{transform:scale(1.8);opacity:0}}
+.f-status span{font-family:var(--font-mono);font-size:.64rem;font-weight:700;color:#10b981;letter-spacing:.08em;text-transform:uppercase}
+.f-ceo{border-top:1px solid var(--line);padding-top:14px;margin-top:16px;display:grid;gap:6px}
+.f-ceo .lbl{font-family:var(--font-mono);font-size:.62rem;color:var(--muted);letter-spacing:.14em;text-transform:uppercase}
+.f-ceo a{display:inline-flex;gap:8px;align-items:center;font-size:.9rem;transition:color .3s}
+.f-ceo a:hover{color:var(--gold2)}
+.f-word{font-family:var(--font-display);font-weight:800;font-size:1.35rem;letter-spacing:.06em;display:inline-block}
+.f-word em{font-style:normal;color:var(--gold)}
+.f-bottom{border-top:1px solid var(--line);padding-top:24px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:.78rem;color:var(--muted);position:relative;z-index:2}
+.f-legal{display:flex;gap:22px;flex-wrap:wrap}
+.f-legal a{position:relative;transition:color .3s}
+.f-legal a::after{content:'';position:absolute;bottom:-2px;left:0;width:0;height:1px;background:var(--gold);transition:width .3s}
+.f-legal a:hover{color:var(--ink)}
+.f-legal a:hover::after{width:100%}
+/* ============ GLITCH ============ */
+.glitch{position:relative;display:inline-block}
+.glitch::before,.glitch::after{content:attr(data-text);position:absolute;inset:0;opacity:0;pointer-events:none}
+.glitch:hover::before{opacity:.8;color:var(--gold);clip-path:inset(20% 0 40% 0);animation:gl1 .3s infinite}
+.glitch:hover::after{opacity:.8;color:var(--blue);clip-path:inset(60% 0 10% 0);animation:gl2 .3s infinite}
+@keyframes gl1{20%{transform:translate(-3px,2px)}40%{transform:translate(3px,-2px)}60%{transform:translate(-2px,1px)}80%{transform:translate(2px,-1px)}}
+@keyframes gl2{20%{transform:translate(3px,-2px)}40%{transform:translate(-3px,2px)}60%{transform:translate(2px,-1px)}80%{transform:translate(-2px,1px)}}
+/* ============ F · BACK TO TOP ============ */
+#toTop{position:fixed;bottom:22px;left:22px;z-index:800;width:44px;height:44px;display:grid;place-items:center;background:rgba(11,18,32,.85);border:1px solid var(--line2);color:var(--gold2);border-radius:12px;cursor:pointer;opacity:0;pointer-events:none;transition:opacity .3s,transform .3s;backdrop-filter:blur(8px)}
+#toTop.show{opacity:1;pointer-events:auto}
+#toTop:hover{transform:translateY(-2px);border-color:var(--gold)}
+/* ============ TEMA TIPOGRÁFICO 2 · EDITORIAL LUXE ============ */
+html[data-font='editorial']{
+  --font-display:'Cormorant Garamond',Georgia,serif;
+  --font-body:'Syne',system-ui,sans-serif;
+}
+html[data-font='editorial'] h1,
+html[data-font='editorial'] h2,
+html[data-font='editorial'] h3,
+html[data-font='editorial'] h4{font-weight:600;letter-spacing:-.01em}
+html[data-font='editorial'] h1 em,
+html[data-font='editorial'] h2 em,
+html[data-font='editorial'] h3 em{font-style:italic;font-weight:500}
+html[data-font='editorial'] .brand{font-weight:600;letter-spacing:.08em}
+html[data-font='editorial'] .btn{font-family:var(--font-mono);letter-spacing:.08em;font-weight:600;font-size:.82rem}
+html[data-font='editorial'] .s-tab,
+html[data-font='editorial'] .m-step{font-family:var(--font-mono);font-weight:600}
+html[data-font='editorial'] .hero h1{font-weight:600}
+html[data-font='editorial'] .sec-head h2{font-size:clamp(2rem,3.8vw,3.1rem)}
+html[data-font='editorial'] .mq-item{font-weight:600;letter-spacing:0}
+html[data-font='editorial'] .mq-item.gold{font-style:italic}
+html[data-font='editorial'] .stat b,
+html[data-font='editorial'] .road-card .rn,
+html[data-font='editorial'] .t-score,
+html[data-font='editorial'] .svc-num{font-weight:700}
+/* ============ E · TOUCH TARGETS 44px ============ */
+.btn,.t-opt,.s-tab,.m-step,.faq-q{min-height:44px}
+.burger{min-width:44px;min-height:44px;display:flex;align-items:center;justify-content:center}
+/* ============ RESPONSIVE ============ */
+@media(max-width:1024px){
+.g4{grid-template-columns:repeat(2,1fr)}
+.hero-grid{grid-template-columns:1fr;gap:50px}
+.orbit{width:min(400px,88vw)}
+.motor{grid-template-columns:1fr}
+.hitl-grid,.abm-grid,.contact-grid{grid-template-columns:1fr}
+.dual{grid-template-columns:1fr}
+.dual-mid{padding:20px 0;justify-content:center}
+.dual-mid span{writing-mode:horizontal-tb;padding:10px 22px}
+.evo{grid-template-columns:1fr}
+.road{grid-template-columns:1fr}
+.cn-layers{grid-template-columns:1fr}
+.f-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:768px){
+.nav-links{position:fixed;top:70px;right:0;left:0;background:rgba(5,8,15,.97);flex-direction:column;padding:30px 24px;gap:22px;border-bottom:1px solid var(--line);transform:translateY(-130%);transition:.4s;backdrop-filter:blur(16px)}
+.nav-links.open{transform:none}
+.burger{display:flex}
+.g2,.g3,.g4,.bigstats,.cn-stats,.cr-cols{grid-template-columns:1fr}
+.s-panel.on{grid-template-columns:1fr}
+.fw{aspect-ratio:auto;display:flex;flex-direction:column;gap:12px}
+.fw-ring{display:none}
+.fw-core{position:static;inset:auto;order:-1;width:160px;height:160px;margin:0 auto 10px;transform:none}
+.fw-node{position:static;width:auto;transform:none}
+.duo{grid-template-columns:1fr}
+.f-row{grid-template-columns:1fr}
+.section{padding:70px 0}
+.f-grid{grid-template-columns:1fr}
+.scroll-ind{display:none}
+}
+@media(prefers-reduced-motion:reduce){
+*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}
+#preloader{display:none!important}
+.marquee .mq-track{animation:none}
+.mq-row-b{display:none}
+#cursorDot,#cursorRing{display:none!important}
+.glitch:hover::before,.glitch:hover::after{animation:none;opacity:0}
+.scroll-ind::before,.f-status .dot::after,.progress{animation:none}
+html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#inicio">Saltar al contenido</a>
+
+<!-- A · PRELOADER -->
+<div id="preloader" aria-hidden="true">
+  <div class="pre-logo"><span>KAPREKAR</span><span class="gold">DIGITALX</span></div>
+  <div class="pre-bar"><i></i></div>
+  <div class="pre-tag">6174 · la constante que reordena el caos</div>
+</div>
+
+<div id="cursorDot" aria-hidden="true"></div>
+<div id="cursorRing" aria-hidden="true"></div>
+<div id="grain" aria-hidden="true"></div>
+<div class="progress" id="progress"></div>
+
+<!-- COOKIE -->
+<div id="cookieBanner" role="dialog" aria-label="Consentimiento de cookies">
+  <div class="ck-title">Su dato es First-Party desde el minuto uno</div>
+  <p class="ck-text">Usamos únicamente cookies propias y analítica sin terceros, alineadas con RGPD y el AI Act. No vendemos ni compartimos datos. ¿Cómo prefiere continuar?</p>
+  <div class="ck-btns">
+    <button class="btn btn-ghost btn-sm" id="ckNo">Solo esencial</button>
+    <button class="btn btn-gold btn-sm" id="ckOk">Aceptar analítica propia</button>
+  </div>
+</div>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="nav-in wrap">
+    <a href="#inicio" class="brand" aria-label="Kaprekar DigitalX"><span class="brand-mark"></span><span class="brand-txt">KAPREKAR<em>DigitalX</em></span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#motor">Modelo</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#herramientas">Herramientas</a>
+      <a href="#china">Expansión</a>
+      <a href="#financiacion">Financiación</a>
+      <a href="#herramientas" class="btn btn-gold btn-sm">Test de Madurez</a>
+    </nav>
+    <div class="nav-right">
+      <button class="font-toggle" id="fontToggle" aria-pressed="false" title="Cambiar tipografía: Tech ↔ Editorial Luxe">Aa</button>
+      <button class="burger" id="burger" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="glow g1"></div><div class="glow g2"></div>
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow reveal">Consultora de Inteligencia de Conversión &amp; Arquitectura de Decisiones</span>
+      <h1 class="reveal" style="--d:.08s">Marketing en la intersección de la <em>IA y el ingenio humano</em>.</h1>
+      <p class="sub reveal" style="--d:.16s">Kaprekar DigitalX convierte la IA Agéntica en crecimiento medible. Orquestamos datos propios, agentes autónomos y criterio senior para que su marca no solo sobreviva al cambio algorítmico de 2026: <strong style="color:var(--ink)">lo domine</strong>.</p>
+      <div class="hero-cta reveal" style="--d:.24s">
+        <a href="#herramientas" class="btn btn-gold">Descubra su nivel de madurez en 3 minutos</a>
+        <a href="#motor" class="btn btn-ghost">Explorar el modelo agéntico ↓</a>
+      </div>
+      <div class="trust-line reveal" style="--d:.32s">
+        <span>Opiniones verificadas <b>4.9/5.0</b></span>
+        <span>Compliance GDPR <b>99.5%</b></span>
+        <span>Desde 2000 · Bizkaia</span>
+        <span>Digital identity <b>@kaprekar.ai</b></span>
+      </div>
+    </div>
+    <div class="orbit reveal" style="--d:.2s" aria-hidden="true">
+      <span class="o-cross v"></span><span class="o-cross h"></span>
+      <div class="o-ring"><span class="o-dot d1"></span><span class="o-dot b d2"></span><span class="o-dot d3"></span></div>
+      <div class="o-ring r2"><span class="o-dot t d1"></span><span class="o-dot d2"></span><span class="o-dot b d3"></span></div>
+      <div class="o-ring r3"><span class="o-dot d1"></span><span class="o-dot t d2"></span></div>
+      <div class="o-core"><span>DX</span></div>
+      <span class="o-chip c1">GEO / AEO</span><span class="o-chip blue c2">IA AGÉNTICA</span><span class="o-chip c3">FIRST-PARTY DATA</span><span class="o-chip blue c4">HITL 80/20</span><span class="o-chip c5">TRUSTFLUENCE</span>
+    </div>
+  </div>
+  <span class="scroll-ind" aria-hidden="true">Scroll</span>
+</section>
+
+<!-- 🔁 MARQUEE BIDIRECCIONAL -->
+<div class="marquee" aria-hidden="true">
+  <div class="mq-row">
+    <div class="mq-track" style="--mq-dur:46s">
+      <span class="mq-item gold">Kaprekar DigitalX</span><span class="mq-sep"></span>
+      <span class="mq-item outline">IA Agéntica</span><span class="mq-sep"></span>
+      <span class="mq-item">GEO / AEO</span><span class="mq-sep"></span>
+      <span class="mq-item outline">HITL 80/20</span><span class="mq-sep"></span>
+      <span class="mq-item">First-Party Data</span><span class="mq-sep"></span>
+      <span class="mq-item outline">Trustfluence</span><span class="mq-sep"></span>
+      <span class="mq-item">China Bridge</span><span class="mq-sep"></span>
+      <span class="mq-item outline">Dark Social</span><span class="mq-sep"></span>
+      <span class="mq-item gold">Kaprekar DigitalX</span><span class="mq-sep"></span>
+      <span class="mq-item outline">IA Agéntica</span><span class="mq-sep"></span>
+      <span class="mq-item">GEO / AEO</span><span class="mq-sep"></span>
+      <span class="mq-item outline">HITL 80/20</span><span class="mq-sep"></span>
+      <span class="mq-item">First-Party Data</span><span class="mq-sep"></span>
+      <span class="mq-item outline">Trustfluence</span><span class="mq-sep"></span>
+      <span class="mq-item">China Bridge</span><span class="mq-sep"></span>
+      <span class="mq-item outline">Dark Social</span><span class="mq-sep"></span>
+    </div>
+  </div>
+  <div class="mq-row mq-row-b">
+    <div class="mq-track rev" style="--mq-dur:30s">
+      <span class="mq-mini">6174 · La Constante</span><span class="mq-sep sm"></span>
+      <span class="mq-mini">RGPD 99.5%</span><span class="mq-sep sm"></span>
+      <span class="mq-mini">AI Act · HITL Art.14</span><span class="mq-sep sm"></span>
+      <span class="mq-mini">WCAG 2.1 AA</span><span class="mq-sep sm"></span>
+      <span class="mq-mini">ES · EU · EN · 中文</span><span class="mq-sep sm"></span>
+      <span class="mq-mini">Privacy by Design</span><span class="mq-sep sm"></span>
+      <span class="mq-mini">Status: Operativo</span><span class="mq-sep sm"></span>
+      <span class="mq-mini">6174 · La Constante</span><span class="mq-sep sm"></span>
+      <span class="mq-mini">RGPD 99.5%</span><span class="mq-sep sm"></span>
+      <span class="mq-mini">AI Act · HITL Art.14</span><span class="mq-sep sm"></span>
+      <span class="mq-mini">WCAG 2.1 AA</span><span class="mq-sep sm"></span>
+      <span class="mq-mini">ES · EU · EN · 中文</span><span class="mq-sep sm"></span>
+      <span class="mq-mini">Privacy by Design</span><span class="mq-sep sm"></span>
+      <span class="mq-mini">Status: Operativo</span><span class="mq-sep sm"></span>
+    </div>
+  </div>
+</div>
+
+<!-- STATS -->
+<section class="stats section-alt">
+  <div class="wrap grid g4">
+    <div class="stat reveal"><b class="stat-n" data-num="60" data-suffix="%">60%</b><span>De las búsquedas terminan sin un clic hacia el sitio original (zero-click search).</span></div>
+    <div class="stat reveal" style="--d:.1s"><b class="stat-n" data-num="73" data-suffix="%">73%</b><span>Del contenido de marketing ya es generado o asistido por IA (Gartner, 2025).</span></div>
+    <div class="stat reveal" style="--d:.2s"><b class="stat-n" data-num="43" data-prefix="$" data-suffix="B">$43B</b><span>Mercado global de IA Agéntica proyectado para 2030 (44% CAGR).</span></div>
+    <div class="stat reveal" style="--d:.3s"><b class="stat-n" data-num="40" data-prefix="+" data-suffix="%">+40%</b><span>ROI atribuible adicional con arquitectura de First-Party Data (rango 25–40%).</span></div>
+  </div>
+</section>
+
+<!-- PARADOJA -->
+<section class="section" id="paradoja">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">01 · La Paradoja de 2026</span>
+      <h2>Automatización <em>vs.</em> Autenticidad</h2>
+      <p class="lead">El mercado exige dos lenguajes a la vez. Quien solo hable uno, desaparece. La convergencia es el nuevo estándar: datos propios, autonomía tecnológica y conexión humana.</p>
+    </div>
+    <div class="dual reveal">
+      <div class="dual-card machine">
+        <span class="dual-tag">Para el Gatekeeper (IA)</span>
+        <h3>Lógica y Datos Estructurados</h3>
+        <span class="sub2">Tecnología autónoma: sistemas agénticos que orquestan procesos completos.</span>
+        <p>Obsesión técnica: datos estructurados, credenciales verificables (E-E-A-T) y semántica profunda. Al algoritmo no se lo seduce; <strong style="color:var(--ink)">se lo alimenta</strong>. Si no eres legible para la IA, eres invisible.</p>
+      </div>
+      <div class="dual-mid"><span>Unshittification · Relevancia</span></div>
+      <div class="dual-card human">
+        <span class="dual-tag">Para el Consumidor (Humano)</span>
+        <h3>Magia y Autenticidad Cruda</h3>
+        <span class="sub2">El consumidor híbrido: saturado de ruido, exige interacciones hiper-humanizadas.</span>
+        <p>Storyproving y desprolijidad como garantía. La perfección hiper-editada genera desconfianza. El humano requiere conexión tribal, contenido crudo y validación real. Si no eres auténtico, eres irrelevante.</p>
+      </div>
+    </div>
+    <div class="paradox-bar reveal">El reto estratégico: usar la innovación para ser <b>más relevantes, no más ruidosos</b>.</div>
+  </div>
+</section>
+
+<!-- PROBLEMA -->
+<section class="section section-alt" id="problema">
+  <div class="wrap">
+    <div class="grid g2">
+      <div class="card pas-card reveal">
+        <span class="pas-num">02 · El Problema — La Trampa de la Agencia Invisible</span>
+        <h3>¿Su agencia actual es un socio de crecimiento o un gasto sin control?</h3>
+        <p>El <strong style="color:var(--terra)">40%</strong> de los clientes de las macro-agencias líderes reportan una falta alarmante de responsabilidad, control de calidad inconsistente y plazos incumplidos. Usted no puede permitirse ser "solo un número más" en una hoja de cálculo. En la era de la IA, el estancamiento digital no es una meseta: es el inicio de una <strong style="color:var(--ink)">caída libre</strong> provocada por modelos de gestión obsoletos y falta de transparencia técnica.</p>
+      </div>
+      <div class="card pas-card reveal" style="--d:.12s">
+        <span class="pas-num">La Agitación — El Costo de la Inacción</span>
+        <h3>El CMO se reinventa… o se convierte en un rol administrativo.</h3>
+        <p>La eficiencia de los canales tradicionales (PPC/SEO) se desploma ante la IA Agéntica. Los reportes de Gartner y Dentsu son claros: el consumidor de 2026 no "busca", es <strong style="color:var(--ink)">"asistido"</strong>. Ignorar el caso de uso estratégico de la IA significa aceptar un aumento incontrolado del CPL y datos fragmentados en silos inservibles. Si su equipo no anticipa los algoritmos hoy, está <strong style="color:var(--terra)">financiando el crecimiento de su competencia</strong>.</p>
+      </div>
+    </div>
+    <div class="bigstats">
+      <div class="bs reveal"><b>60%</b><span>de las búsquedas terminan sin clic hacia el sitio web original.</span></div>
+      <div class="bs reveal" style="--d:.08s"><b>−24%</b><span>de CTR orgánico medio por las descripciones generativas de IA (AIO).</span></div>
+      <div class="bs reveal" style="--d:.16s"><b>90%</b><span>de los compradores B2B ya investiga con IA, saltándose los sitios corporativos.</span></div>
+      <div class="bs reveal" style="--d:.24s"><b>+15–25%</b><span>de CPL por la competencia SaaS de auto-servicio.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUCIÓN -->
+<section class="section" id="solucion">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">03 · La Solución — Partner de Crecimiento Integrado</span>
+      <h2>Marketing de resultados con <em>ADN de consultoría en IA</em></h2>
+      <p class="lead">Kaprekar DigitalX no es una agencia de ejecución masiva: somos una extensión de su equipo interno. Comunicación proactiva, devoción por los objetivos del cliente y el ROI como única métrica.</p>
+    </div>
+    <div class="weights reveal">
+      <div class="w-row" data-w="40"><div class="w-top"><h3>SEO de Nueva Generación</h3><b>40%</b></div><div class="w-bar"><i></i></div><p>Estrategia "Zero-Click" y optimización para motores de respuesta de IA.</p></div>
+      <div class="w-row" data-w="30"><div class="w-top"><h3>PPC y Performance</h3><b>30%</b></div><div class="w-bar"><i></i></div><p>Gestión de medios pagados con modelos predictivos de ROAS.</p></div>
+      <div class="w-row" data-w="15"><div class="w-top"><h3>Consultoría en IA</h3><b>15%</b></div><div class="w-bar"><i></i></div><p>Auditoría de madurez y despliegue de agentes autónomos para la ruta de compra.</p></div>
+      <div class="w-row" data-w="15"><div class="w-top"><h3>Estrategia Digital</h3><b>15%</b></div><div class="w-bar"><i></i></div><p>Hoja de ruta para la transformación del crecimiento y alfabetización del liderazgo.</p></div>
+    </div>
+    <div class="reveal" style="margin-top:50px">
+      <span class="eyebrow">De proveedores a arquitectos</span>
+      <div style="margin-top:24px;overflow-x:auto">
+        <table class="cmp">
+          <thead><tr><th>Dimensión</th><th>Modelo tradicional</th><th class="hi">Kaprekar DigitalX</th></tr></thead>
+          <tbody>
+            <tr><td>Métrica de valor</td><td>Basada en el tiempo (horas)</td><td class="hi">Basada en el valor: resultados e IP</td></tr>
+            <tr><td>El entregable</td><td>Ejecución manual y laboral</td><td class="hi">Orquestación de sistemas, automatización y estrategia</td></tr>
+            <tr><td>Relación con el cliente</td><td>Proveedor de servicios reactivo</td><td class="hi">Socio estratégico de consultoría y crecimiento</td></tr>
+            <tr><td>Ventaja competitiva</td><td>Fuerza laboral y volumen</td><td class="hi">Stack de IA propio, gobernanza de datos y Trustfluence</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MOTOR -->
+<section class="section section-alt" id="motor">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">04 · El Motor de Transformación Agéntica</span>
+      <h2>5 pasos hacia la <em>escalabilidad absoluta</em></h2>
+      <p class="lead">No se alcanzan modelos de alto margen sin una infraestructura de datos propietaria. Esta es la hoja de ruta secuencial para 2026.</p>
+    </div>
+    <div class="motor">
+      <div class="m-steps reveal" id="mSteps">
+        <button class="m-step on" data-step="0"><span class="n">01</span><span>Fundación de Datos<small>Gobernanza y First-Party Data</small></span></button>
+        <button class="m-step" data-step="1"><span class="n">02</span><span>Laboratorio de IA<small>Piloto interno de flujos clave</small></span></button>
+        <button class="m-step" data-step="2"><span class="n">03</span><span>Human-in-the-Loop<small>Institucionalizar supervisión</small></span></button>
+        <button class="m-step" data-step="3"><span class="n">04</span><span>Escalado a 3 Dominios<small>Agentes internos, clientes, AEO/GEO</small></span></button>
+        <button class="m-step" data-step="4"><span class="n">05</span><span>Evolución del Valor<small>Precios basados en ROI</small></span></button>
+      </div>
+      <div class="m-panel reveal" style="--d:.12s">
+        <div class="m-pane on">
+          <h3>Fundación de Datos</h3><span class="tag">"La IA es tan inteligente como los datos que la alimentan."</span>
+          <p>En un mundo sin cookies de terceros y con regulaciones estrictas (AI Act, RGPD), el First-Party y Zero-Party Data son la infraestructura crítica. No gana quien más datos tiene, sino quien mejor los activa: primero la columna vertebral de identidad, luego los agentes autónomos.</p>
+          <ul><li>Gobernanza y compliance por diseño (AI Act, RGPD)</li><li>Data Clean Room y CDP como cimiento</li><li>Columna vertebral de identidad antes de escalar</li></ul>
+        </div>
+        <div class="m-pane">
+          <h3>Laboratorio de IA</h3><span class="tag">"La adopción no es un evento masivo: es prueba y aprendizaje."</span>
+          <p>Un laboratorio interno enfocado en 3 casos de uso acotados, con KPIs claros y un plan de upskilling. Del flujo tradicional caótico al agente de IA: rápido, medible y gobernado.</p>
+          <ul><li>Contenidos: −30/40% de tiempo de producción</li><li>Analítica: −50/60% de tiempo en reportes y detección de anomalías</li><li>Orquestación: reasignación automática de presupuestos 24/7</li></ul>
+        </div>
+        <div class="m-pane">
+          <h3>Human-in-the-Loop (HITL)</h3><span class="tag">"La IA ejecuta; los humanos dirigen."</span>
+          <p>Protocolos donde las decisiones de alto riesgo requieren intervención humana obligatoria. Para evitar el AI Slop y proteger la integridad de las marcas, institucionalizamos la supervisión y la calidad.</p>
+          <ul><li>Escalado automático de contenido sensible a expertos</li><li>Compuerta de gobernanza: filtros de riesgo y brand safety</li><li>Empatía digital en la "última milla" estratégica</li></ul>
+        </div>
+        <div class="m-pane">
+          <h3>Escalado a 3 Dominios</h3><span class="tag">"Dejamos de ser creadores de contenido para ser constructores de ecosistemas."</span>
+          <p>Operación simultánea en los tres dominios donde actúan los agentes autónomos del mercado.</p>
+          <ul><li>Agentes internos: eficiencia y producción sin interacción con el cliente</li><li>Agentes para clientes: chatbots de ventas, CRM y orquestación</li><li>Agentes de consumidores: el entorno AEO/GEO (ChatGPT, Perplexity)</li></ul>
+        </div>
+        <div class="m-pane">
+          <h3>Evolución del Valor</h3><span class="tag">"Dejar de vender horas; empezar a vender resultados."</span>
+          <p>A medida que la IA reduce el esfuerzo de producción, los honorarios por ejecución manual colapsan. Precios basados en ROI y orquestación: propiedad intelectual y resultados garantizados.</p>
+          <ul><li>Pricing basado en valor: honorarios + bonos por rendimiento</li><li>Licenciamiento de la arquitectura de IA</li><li>Contratos de socio estratégico a largo plazo</li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HITL -->
+<section class="section" id="hitl">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">05 · El Protocolo Human-in-the-Loop</span>
+      <h2>Velocidad de máquina, <em>criterio de experto</em></h2>
+      <p class="lead">Automatizamos el 60–70% de los flujos de trabajo repetitivos. El foco humano se reorienta a lo que ninguna máquina puede replicar: estrategia, empatía y gobernanza ética.</p>
+    </div>
+    <div class="hitl-grid">
+      <div class="donut-wrap reveal">
+        <div class="donut"><div class="donut-center"><div><b>Protocolo HITL</b><br><span>80 / 20</span></div></div></div>
+        <div class="donut-legend"><span><i style="background:var(--blue)"></i>80% · Machine / Logic</span><span><i style="background:var(--terra)"></i>20% · Human / Magic</span></div>
+      </div>
+      <div class="reveal" style="--d:.15s">
+        <span class="eyebrow">Human Cortex Escalation Funnel</span>
+        <div class="funnel" style="margin-top:20px">
+          <div class="f-block b1"><strong>Ejecución de Máquina</strong><span>Parsing de datos · generación de borradores · pujas dinámicas</span></div>
+          <div class="f-arrow">▼</div>
+          <div class="f-block b2"><strong>Compuerta de Gobernanza</strong><span>Filtros de riesgo · cumplimiento de marca</span></div>
+          <div class="f-arrow">▼</div>
+          <div class="f-block b3"><strong>El Córtex Humano</strong><span>Estrategia · empatía · ética · aprobación final</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="duo reveal">
+      <div class="col-a"><div class="dh a">IA Agéntica ejecuta</div><ul><li>Análisis masivo de datos y audiencias</li><li>Generación de variantes de contenido (A/B)</li><li>Automatización de campañas y flujos</li><li>Monitorización y optimización en tiempo real</li><li>Reporting y dashboards predictivos</li><li>SEO técnico y estructuración semántica</li></ul></div>
+      <div class="col-b"><div class="dh b">Equipo senior controla</div><ul><li>Dirección creativa y narrativa de marca</li><li>Selección final y validación del mensaje</li><li>Estrategia de posicionamiento y valor</li><li>Gestión de relación con el cliente</li><li>Interpretación y decisiones ejecutivas</li><li>Empatía, intuición y juicio cultural</li></ul></div>
+    </div>
+    <div class="trust-eq reveal">
+      <span class="te-chip a">Eficiencia analítica de IA</span><span class="te-op">+</span><span class="te-chip b">Empatía y criterio humano</span><span class="te-op">=</span><span class="te-chip c">Trustfluence · Confianza y conversión</span>
+    </div>
+    <p class="lead reveal" style="margin-top:24px;text-align:center;font-size:.9rem">«El 81.8% de las empresas señalan la falta de profesionales cualificados en IA como barrera. Nuestro talento entrenado en IA es la máxima ventaja.»</p>
+  </div>
+</section>
+
+<!-- TOTAL SEARCH -->
+<section class="section section-alt" id="search">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">06 · Total Search</span>
+      <h2>Del SEO clásico al <em>AEO y GEO</em></h2>
+      <p class="lead">El posicionamiento tradicional ha muerto: los resúmenes de IA aparecen en más del 60% de las búsquedas. Los usuarios delegan sus decisiones en sus algoritmos personales.</p>
+    </div>
+    <div class="evo reveal">
+      <div class="evo-card old"><span class="evo-tag">Obsoleto</span><h4>El viejo embudo de clics — SEO</h4><p>Búsqueda → scroll entre enlaces → clic → visita a la web → lectura → conversión. De listas de enlaces…</p></div>
+      <div class="evo-arrow">→</div>
+      <div class="evo-card new"><span class="evo-tag">2026</span><h4>El embudo zero-click — AEO/GEO</h4><p>Prompt del usuario → síntesis y recomendación de la IA → decisión y conversión directa. Evolución a respuestas generadas.</p></div>
+    </div>
+    <div class="chips reveal">
+      <span><b>25–40%</b> del tráfico informacional ya se desvía a respuestas generativas</span>
+      <span><b>90%</b> de compradores B2B investiga con ChatGPT e IA</span>
+      <span><b>72%</b> inicia la compra en plataformas distribuidas (TikTok, YouTube, voz)</span>
+    </div>
+    <div class="reveal" style="overflow-x:auto">
+      <table class="cmp">
+        <thead><tr><th>Dimensión</th><th>SEO tradicional (obsoleto)</th><th class="hi">GEO / AEO · Kaprekar DigitalX</th></tr></thead>
+        <tbody>
+          <tr><td>Objetivo principal</td><td>Clasificar en los 10 enlaces azules y generar clics.</td><td class="hi">Ser reconocido, citado y recomendado como la fuente definitiva por los LLMs.</td></tr>
+          <tr><td>Estructura del contenido</td><td>Optimización por palabras clave y volumen.</td><td class="hi">Densidad semántica, formato Answer-First y datos estructurados legibles por máquinas.</td></tr>
+          <tr><td>Métrica de autoridad</td><td>Cantidad de backlinks.</td><td class="hi">E-E-A-T (Experiencia, Autoridad, Confianza) e investigaciones originales.</td></tr>
+          <tr><td>El lector objetivo</td><td>Humanos navegando por páginas web.</td><td class="hi">Agentes de IA actuando como gatekeepers de la información.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="strategy reveal">
+      <h4>Nuestra estrategia AEO</h4>
+      <ol><li>Pasar de palabras clave a optimización por contexto y respuesta.</li><li>Si una marca no es legible para la IA, es invisible.</li><li>Integrar contenido estructurado, autoridad (E-E-A-T) y First-Party Data para ser la recomendación elegida por la máquina.</li></ol>
+    </div>
+  </div>
+</section>
+
+<!-- DATA -->
+<section class="section" id="data">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">07 · Supervivencia en un mundo post-cookie</span>
+      <h2>El poder del <em>First &amp; Zero-Party Data</em></h2>
+      <p class="lead">Fin del marketing de vigilancia: hacia un modelo basado en el consentimiento. La privacidad evoluciona de obstáculo legal a ventaja competitiva central.</p>
+    </div>
+    <div class="dflow reveal">
+      <div class="df-node"><h4>First-Party Data</h4><p>Comportamientos recogidos directamente en sus canales.</p></div>
+      <span class="df-plus">+</span>
+      <div class="df-node"><h4>Zero-Party Data</h4><p>Preferencias compartidas voluntariamente a cambio de valor.</p></div>
+      <span class="df-arrow">→</span>
+      <div class="df-node engine"><h4>AI Engine</h4><p>Orquestación agéntica sobre datos propios y exclusivos.</p></div>
+      <span class="df-arrow">→</span>
+      <div class="df-node target"><h4>Hiper-personalización predictiva</h4><p>La respuesta correcta, antes de que se formule la pregunta.</p></div>
+    </div>
+    <div class="imperative reveal">El imperativo: no gana quien acumula más datos, sino <b>quien mejor los activa</b>.</div>
+    <div class="reveal" style="overflow-x:auto">
+      <table class="cmp">
+        <thead><tr><th></th><th>Marketing de vigilancia (modelo tradicional)</th><th class="hi">Ventaja basada en consentimiento</th></tr></thead>
+        <tbody>
+          <tr><td>Activo de datos</td><td>Third-Party Data: decadente, regulado, dependiente de plataformas.</td><td class="hi">First/Zero-Party Data: activo que se revaloriza, alta confianza, listo para IA.</td></tr>
+          <tr><td>Segmentación</td><td>Rastreo pasivo e invasivo.</td><td class="hi">Segmentación predictiva y analítica de propensión.</td></tr>
+          <tr><td>Impacto en negocio (ROI)</td><td>Costes de adquisición en aumento por pérdida de señal.</td><td class="hi">Las marcas con datos propios superan entre un 25% y un 40% en ROI atribuible.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- FLYWHEEL -->
+<section class="section section-alt" id="flywheel">
+  <div class="wrap">
+    <div class="sec-head reveal" style="margin-left:auto;margin-right:auto;text-align:center">
+      <span class="eyebrow" style="justify-content:center">08 · El Flywheel</span>
+      <h2>Un ecosistema cerrado que genera <em>ventajas compuestas</em></h2>
+      <p class="lead" style="margin:auto">No es un conjunto de tácticas aisladas: es un sistema imposible de replicar por la competencia.</p>
+    </div>
+    <div class="fw reveal">
+      <div class="fw-ring"></div>
+      <div class="fw-core"><b>Crecimiento<br>Exponencial</b></div>
+      <div class="fw-node n1"><span class="fn">01</span><strong>Datos propios y exclusivos</strong><span>Alimentan con precisión a los agentes internos.</span></div>
+      <div class="fw-node n2"><span class="fn">02</span><strong>Agentes internos de IA</strong><span>Producción y optimización a escala.</span></div>
+      <div class="fw-node n3"><span class="fn">03</span><strong>Filtrado HITL</strong><span>Calidad premium y brand safety asegurados.</span></div>
+      <div class="fw-node n4"><span class="fn">04</span><strong>Dominio en 3 ecosistemas</strong><span>Interno, clientes y consumidores (AEO/GEO).</span></div>
+      <div class="fw-node n5"><span class="fn">05</span><strong>Precios basados en valor</strong><span>Resultados e IP, no horas. Márgenes crecientes.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+<section class="section" id="servicios">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">09 · Portfolio de servicios llave en mano</span>
+      <h2>Cuatro verticales, <em>un solo ecosistema</em></h2>
+      <p class="lead">Contratables de forma independiente o integrados. Todos incluyen dirección estratégica senior, dashboard de performance en tiempo real y revisión mensual ejecutiva.</p>
+    </div>
+    <div class="s-tabs reveal" id="sTabs">
+      <button class="s-tab on" data-tab="0">Intelligence &amp; Strategy</button>
+      <button class="s-tab" data-tab="1">Content &amp; GEO</button>
+      <button class="s-tab" data-tab="2">Technology &amp; Data</button>
+      <button class="s-tab" data-tab="3">International &amp; China</button>
+    </div>
+    <div class="s-panel on reveal" data-panel="0">
+      <div class="svc"><span class="svc-num">01</span><h3>Brand Trust Audit <span class="tier premium">Premium</span></h3><p>Diagnóstico 360° de percepción, autoridad y posicionamiento competitivo.</p><span class="ret">RETENCIÓN: ALTA</span></div>
+      <div class="svc"><span class="svc-num">02</span><h3>GEO Readiness Assessment <span class="tier core">Core</span></h3><p>Auditoría de visibilidad en motores generativos y gaps semánticos.</p><span class="ret">RETENCIÓN: ALTA</span></div>
+      <div class="svc"><span class="svc-num">03</span><h3>Allbound Funnel Mapping <span class="tier core">Core</span></h3><p>Mapeo y diagnóstico del funnel integrado marketing–ventas.</p><span class="ret">RETENCIÓN: MUY ALTA</span></div>
+      <div class="svc"><span class="svc-num">04</span><h3>Competitive Intelligence IA <span class="tier premium">Premium</span></h3><p>Monitorización competitiva continua con IA agéntica.</p><span class="ret">RETENCIÓN: ALTA</span></div>
+    </div>
+    <div class="s-panel" data-panel="1">
+      <div class="svc"><span class="svc-num">01</span><h3>Content Intelligence Suite <span class="tier core">Core</span></h3><p>Producción HITL: artículos, landing pages y SEO semántico avanzado.</p><span class="ret">RETENCIÓN: MUY ALTA</span></div>
+      <div class="svc"><span class="svc-num">02</span><h3>LLM Citation Campaign <span class="tier premium">Premium</span></h3><p>Estrategia para ser citado por ChatGPT, Gemini y Perplexity.</p><span class="ret">RETENCIÓN: ALTA</span></div>
+      <div class="svc"><span class="svc-num">03</span><h3>Thought Leadership Program <span class="tier premium">Premium</span></h3><p>Programa de liderazgo de opinión para ejecutivos (Dark Social).</p><span class="ret">RETENCIÓN: ALTA</span></div>
+      <div class="svc"><span class="svc-num">04</span><h3>Video &amp; Social Content IA <span class="tier core">Core</span></h3><p>Contenido multicanal HITL-validado con distribución automatizada.</p><span class="ret">RETENCIÓN: MEDIA</span></div>
+    </div>
+    <div class="s-panel" data-panel="2">
+      <div class="svc"><span class="svc-num">01</span><h3>First-Party Data Stack <span class="tier enterprise">Enterprise</span></h3><p>Implementación de CDP, cookieless tracking y modelos de atribución.</p><span class="ret">RETENCIÓN: MUY ALTA</span></div>
+      <div class="svc"><span class="svc-num">02</span><h3>CRM Allbound Implementation <span class="tier enterprise">Enterprise</span></h3><p>HubSpot/Salesforce + integración IA + automatizaciones full-funnel.</p><span class="ret">RETENCIÓN: MUY ALTA</span></div>
+      <div class="svc"><span class="svc-num">03</span><h3>IA Agéntica Custom <span class="tier enterprise">Enterprise</span></h3><p>Desarrollo de agentes IA a medida para procesos de marketing.</p><span class="ret">RETENCIÓN: ALTA</span></div>
+      <div class="svc"><span class="svc-num">04</span><h3>Analytics &amp; Revenue Dashboard <span class="tier core">Core</span></h3><p>Reporting ejecutivo en tiempo real con predicción de ingresos.</p><span class="ret">RETENCIÓN: ALTA</span></div>
+    </div>
+    <div class="s-panel" data-panel="3">
+      <div class="svc"><span class="svc-num">01</span><h3>China Market Entry <span class="tier premium">Premium</span></h3><p>Estrategia integral de entrada: Baidu, Xiaohongshu, WeChat y Douyin.</p><span class="ret">RETENCIÓN: MUY ALTA</span></div>
+      <div class="svc"><span class="svc-num">02</span><h3>KOL &amp; Social Commerce China <span class="tier premium">Premium</span></h3><p>Gestión de Key Opinion Leaders y social commerce en China.</p><span class="ret">RETENCIÓN: ALTA</span></div>
+      <div class="svc"><span class="svc-num">03</span><h3>Cross-Border SEO <span class="tier core">Core</span></h3><p>Optimización multimercado: Europa, LATAM y Asia.</p><span class="ret">RETENCIÓN: ALTA</span></div>
+      <div class="svc"><span class="svc-num">04</span><h3>Intercultural Brand Adaptation <span class="tier premium">Premium</span></h3><p>Adaptación de marca e identidad para mercados internacionales.</p><span class="ret">RETENCIÓN: MUY ALTA</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- HERRAMIENTAS -->
+<section class="section section-alt" id="herramientas">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">10 · El Centro de Inteligencia</span>
+      <h2>Diagnostique su posición <em>antes de que lo haga el mercado</em></h2>
+      <p class="lead">Herramientas interactivas de diagnóstico de alto valor, alineadas con el AI Maturity Model de Gartner.</p>
+    </div>
+    <div class="grid g2">
+      <div class="tool-card reveal">
+        <div class="tool-head">
+          <span class="tool-icon">◆</span>
+          <div><h3>Test de Madurez en IA</h3><p>Calificador basado en el AI Maturity Model de Gartner. Autodiagnóstico en 5 dimensiones críticas.</p></div>
+        </div>
+        <div id="testBody"></div>
+      </div>
+      <div class="tool-card reveal" style="--d:.12s">
+        <div class="tool-head">
+          <span class="tool-icon">Σ</span>
+          <div><h3>Calculadora de ROI y ROAS</h3><p>ROI Proyectado = (Clientes × LTV − Inversión) / Inversión. Diseñada para probar el valor del marketing ante el directorio.</p></div>
+        </div>
+        <div class="calc-grid">
+          <div class="calc-inputs">
+            <label>Inversión mensual en Ads (€)<input type="number" id="cInv" value="10000" min="0"></label>
+            <label>CPL actual (€)<input type="number" id="cCpl" value="120" min="1"></label>
+            <label>Tasa de cierre Lead → Cliente (%)<input type="number" id="cClose" value="5" min="0" max="100"></label>
+            <label>LTV promedio por cliente (€)<input type="number" id="cLtv" value="6000" min="0"></label>
+            <label class="opt-label">Optimización IA: reducción de CPL · <output id="cOptOut">15%</output>
+              <input type="range" id="cOpt" min="0" max="40" value="15">
+              <span style="font-size:.74rem">Simule el impacto: ¿cuánto ahorra su empresa si la IA reduce su CPL?</span>
+            </label>
+          </div>
+          <div class="cr-cols">
+            <div class="cr-col"><h4>Modelo actual</h4>
+              <div class="cr-row"><span>Leads / mes</span><b id="bLeads">—</b></div>
+              <div class="cr-row"><span>Clientes / mes</span><b id="bClients">—</b></div>
+              <div class="cr-row"><span>Ingresos / mes</span><b id="bRev">—</b></div>
+              <div class="cr-row"><span>ROI</span><b id="bRoi">—</b></div>
+              <div class="cr-row"><span>ROAS</span><b id="bRoas">—</b></div>
+            </div>
+            <div class="cr-col hi"><h4>Con IA Agéntica</h4>
+              <div class="cr-row"><span>Leads / mes</span><b id="oLeads">—</b></div>
+              <div class="cr-row"><span>Clientes / mes</span><b id="oClients">—</b></div>
+              <div class="cr-row"><span>Ingresos / mes</span><b id="oRev">—</b></div>
+              <div class="cr-row"><span>ROI</span><b id="oRoi">—</b></div>
+              <div class="cr-row"><span>ROAS</span><b id="oRoas">—</b></div>
+            </div>
+          </div>
+          <div class="cr-delta" id="cDelta">—</div>
+          <a href="#contacto" class="btn btn-gold" style="justify-content:center">Validar este escenario con un estratega senior</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CHINA -->
+<section class="section" id="china">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">11 · Pilar de expansión internacional</span>
+      <h2>China como <em>laboratorio global</em></h2>
+      <p class="lead">China no es un mercado: es un ecosistema digital paralelo. Las tácticas que dominan China hoy dictarán el marketing occidental de mañana. El interés por productos europeos premium creció un +34% desde 2023.</p>
+    </div>
+    <div class="cn-stats">
+      <div class="bs reveal"><b>3.5B RMB</b><span>GMV de Douyin en 2024: el comercio se vuelve nativo en la experiencia social.</span></div>
+      <div class="bs reveal" style="--d:.08s"><b>70%</b><span>de las decisiones de compra del segmento premium pasan por Xiaohongshu.</span></div>
+      <div class="bs reveal" style="--d:.16s"><b>+25%</b><span>ROI superior de las marcas que activan micro-comunidades (Kantar).</span></div>
+    </div>
+    <div class="cn-layers">
+      <div class="cn-node reveal" data-layer="Capa de Búsqueda"><h3>Baidu</h3><p>SEO y validación inicial de marca. El anclaje de autoridad, con configuración técnica adaptada al Great Firewall e ICP License support.</p></div>
+      <div class="cn-node reveal" style="--d:.08s" data-layer="Capa de Confianza"><h3>Xiaohongshu</h3><p>Trust-First Marketing: reseñas profundas, product seeding y gestión de KOLs/KOCs adaptadas al código estético local.</p></div>
+      <div class="cn-node reveal" style="--d:.16s" data-layer="Capa de Retención"><h3>WeChat</h3><p>Dominio privado: fidelización, comunidades cerradas, mini-programs, CRM y WeChat Pay para conversión B2B.</p></div>
+      <div class="cn-node reveal" style="--d:.24s" data-layer="Capa de Volumen"><h3>Douyin</h3><p>Descubrimiento masivo algorítmico y Social Commerce integrado: vídeo corto, publicidad in-feed y live-streaming commerce.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABM VASCO -->
+<section class="section section-alt" id="abm">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">12 · Dominio B2B Vasco</span>
+      <h2>Dark Social y el <em>marketing de mulas</em></h2>
+      <p class="lead">Bizkaia concentra el tejido industrial y tecnológico más avanzado del norte de España. Los directivos deciden en canales donde la publicidad convencional no llega.</p>
+    </div>
+    <div class="abm-grid">
+      <div class="abm-visual reveal" aria-hidden="true">
+        <div class="abm-ring r3"><span class="abm-label">Redes públicas · La plaza</span></div>
+        <div class="abm-ring r2"><span class="abm-label">Comunidades de nicho</span></div>
+        <div class="abm-ring r1"><span class="abm-label">Dark Social</span></div>
+        <div class="abm-core"></div>
+      </div>
+      <div>
+        <div class="tier-list reveal">
+          <div class="tier-item"><span class="tn">T1</span><p><b>10–15 cuentas:</b> industriales con facturación &gt;50M€ en proceso de transformación digital.</p></div>
+          <div class="tier-item"><span class="tn">T2</span><p><b>30–50 cuentas:</b> scale-ups tecnológicas vascas en fase de expansión y captación de inversión.</p></div>
+          <div class="tier-item"><span class="tn">T3</span><p><b>100+ cuentas:</b> PYMES industriales y de servicios que buscan digitalización financiable.</p></div>
+        </div>
+        <div class="card reveal" style="--d:.15s">
+          <h3>Estrategia de ejecución</h3>
+          <p>El Marketing de Mulas reasigna presupuestos masivos para infiltrar a los micro-líderes de tribus. Convencer a un líder de nicho vale más que mil anuncios programáticos: ganamos la invitación al chat privado (WhatsApp, Telegram, Discord) mediante contenido de alto valor como moneda de cambio social.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINANCIACIÓN -->
+<section class="section" id="financiacion">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">13 · Financiando la transformación</span>
+      <h2>Ayudas 2026: <em>invierta entre un 30% y un 80% menos</em></h2>
+      <p class="lead">Empaquetamos los servicios como proyectos de innovación tecnológica elegibles para subvenciones públicas, eliminando la barrera de adopción más común.</p>
+    </div>
+    <div class="reveal" style="overflow-x:auto">
+      <table class="cmp fin-table">
+        <thead><tr><th>Programa</th><th>Organismo</th><th>Dotación máx.</th><th>Servicios elegibles</th></tr></thead>
+        <tbody>
+          <tr><td>SPRI IA y Dato</td><td>SPRI / Gobierno Vasco</td><td class="hi">Hasta 100.000 €</td><td>GEO, IA Agéntica, CDP, Allbound</td></tr>
+          <tr><td>Industria Digitala</td><td>SPRI / Gobierno Vasco</td><td class="hi">Hasta 60.000 €</td><td>Automatización, CRM, e-commerce</td></tr>
+          <tr><td>Programa 3i</td><td>Diputación Foral Bizkaia</td><td class="hi">Hasta 50.000 €</td><td>Innovación, digitalización PYME</td></tr>
+          <tr><td>Conecta PYME</td><td>Red.es / MINECO</td><td class="hi">Hasta 12.000 €</td><td>Marketing digital, presencia web</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note-box reveal"><b>Kaprekar DigitalX actúa como gestor integral de la subvención:</b> identificación de la línea más adecuada para cada cliente, redacción de la memoria técnica y justificación final del proyecto.</div>
+  </div>
+</section>
+
+<!-- ROADMAP -->
+<section class="section section-alt" id="roadmap">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">14 · El roadmap del CMO para 2026</span>
+      <h2>Tres fases, <em>una trayectoria inevitable</em></h2>
+      <p class="lead">Cada fase construye sobre la anterior, creando un efecto multiplicador que convierte las fortalezas en posicionamiento de mercado.</p>
+    </div>
+    <div class="road">
+      <div class="road-card reveal"><span class="rn">01</span><h3>Auditar y Proteger</h3><span class="ph">Fase · Fundación</span>
+        <ul><li>Evalúe su madurez en First-Party Data y cumplimiento ético</li><li>AI Act, RGPD y EAA como ventaja, no como coste</li><li>Brand Trust Audit + gobernanza por diseño</li></ul></div>
+      <div class="road-card reveal" style="--d:.12s"><span class="rn">02</span><h3>Adaptar Modelos</h3><span class="ph">Fase · Despliegue</span>
+        <ul><li>Cambie proveedores tácticos por partners orientados a negocio (ROI)</li><li>Laboratorio de IA con 3 flujos de trabajo clave</li><li>Allbound Funnel Mapping y stack GEO/AEO</li></ul></div>
+      <div class="road-card reveal" style="--d:.24s"><span class="rn">03</span><h3>Integrar e Innovar</h3><span class="ph">Fase · Dominio</span>
+        <ul><li>Despliegue de IA agéntica para liberar el talento creativo humano</li><li>Dominio de los tres ecosistemas de agentes</li><li>Evolución hacia Trustfluence y precios por valor</li></ul></div>
+    </div>
+    <p class="road-tag reveal">El crecimiento pertenece a <b>quienes lideran la transformación sistémica</b>.</p>
+  </div>
+</section>
+
+<!-- CASOS -->
+<section class="section" id="casos">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">15 · El factor de confianza</span>
+      <h2>Resultados que no necesitan <em>interpretación</em></h2>
+      <div class="rating"><b>★ 4.9/5.0</b><span>Opiniones verificadas · Rating promedio</span></div>
+    </div>
+    <div class="grid g2">
+      <div class="quote tilt reveal"><span class="glare" aria-hidden="true"></span><div class="qt">"Devoción absoluta por los resultados"</div><p>"A diferencia de las agencias de gran escala, el Account Manager realmente conoce nuestro negocio. Su enfoque customer-centric eliminó los problemas de calidad que solíamos tener."</p><span class="who">— CEO · SECTOR MANUFACTURA</span></div>
+      <div class="quote tilt reveal" style="--d:.08s"><span class="glare" aria-hidden="true"></span><div class="qt">"Transparencia en tiempos de incertidumbre"</div><p>"Son honestos sobre lo que funciona y lo que no. Su comunicación proactiva nos da la confianza para escalar el presupuesto de PPC sin miedo a sorpresas de último minuto."</p><span class="who">— DIRECTOR DE MARKETING · HEALTHCARE</span></div>
+      <div class="quote tilt reveal" style="--d:.16s"><span class="glare" aria-hidden="true"></span><div class="qt">"Resultados que no necesitan interpretación"</div><p>"Detuvieron la caída de nuestro tráfico y lograron un aumento del 60% en conversiones en 180 días. Su transparencia solucionó el vacío de responsabilidad que teníamos con nuestra agencia anterior."</p><span class="who">— DIRECTOR DE MARKETING · SOFTWARE B2B</span></div>
+      <div class="quote tilt reveal" style="--d:.24s"><span class="glare" aria-hidden="true"></span><div class="qt">"Una extensión de nuestro equipo interno"</div><p>"Su pasión por la innovación técnica es contagiosa. Reinventamos nuestra estructura de marketing bajo un modelo agéntico que ya está pagando dividendos."</p><span class="who">— CMO · FINTECH</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section section-alt" id="faq">
+  <div class="wrap">
+    <div class="sec-head reveal" style="text-align:center;margin-left:auto;margin-right:auto">
+      <span class="eyebrow" style="justify-content:center">16 · Preguntas estratégicas</span>
+      <h2>Lo que el C-Suite <em>pregunta primero</em></h2>
+    </div>
+    <div class="faq reveal">
+      <div class="faq-item"><button class="faq-q">¿Cómo afecta la IA agéntica al viaje del comprador?</button><div class="faq-a"><div>La IA agéntica optimiza el viaje del comprador al actuar como un asistente autónomo que personaliza la oferta en tiempo real, reduciendo la fricción y acelerando la conversión mediante una interacción humano-tecnológica fluida.</div></div></div>
+      <div class="faq-item"><button class="faq-q">¿Qué es el GEO/AEO 2026?</button><div class="faq-a"><div>Es la evolución del posicionamiento hacia la Optimización para Motores de Respuesta. Se enfoca en estructurar datos para que las IAs generativas citen a la marca como la respuesta definitiva ante consultas complejas del usuario.</div></div></div>
+      <div class="faq-item"><button class="faq-q">¿Qué es el modelo Human-in-the-Loop (HITL)?</button><div class="faq-a"><div>Un protocolo donde la IA ejecuta el 80% del trabajo pesado (análisis, generación, optimización) y el criterio humano senior valida el 20% crítico: estrategia, empatía y aprobación final. Velocidad de máquina con criterio de experto — y, bajo el AI Act europeo, un diferenciador de compliance directo.</div></div></div>
+      <div class="faq-item"><button class="faq-q">¿Por qué el First-Party Data es urgente?</button><div class="faq-a"><div>Con la desaparición de las cookies de terceros y el endurecimiento regulatorio, los datos propios son la única infraestructura de activación sostenible. Las marcas con sistemas de datos propios superan entre un 25% y un 40% en ROI atribuible a los rezagados.</div></div></div>
+      <div class="faq-item"><button class="faq-q">¿Cómo se financia la transformación?</button><div class="faq-a"><div>Empaquetamos los servicios como proyectos de innovación tecnológica elegibles para subvenciones públicas (SPRI, Diputación Foral de Bizkaia, Red.es), reduciendo la inversión neta entre un 30% y un 80% respecto al precio de mercado. Gestionamos todo el ciclo: línea adecuada, memoria técnica y justificación.</div></div></div>
+      <div class="faq-item"><button class="faq-q">¿Qué incluyen los servicios llave en mano?</button><div class="faq-a"><div>Todos los servicios incluyen dirección estratégica senior, dashboard de performance en tiempo real con predicción de ingresos y revisión mensual ejecutiva. Pueden contratarse por vertical o como ecosistema integrado.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA + CONTACTO -->
+<section class="section" id="contacto">
+  <div class="wrap">
+    <div class="cta-quote reveal">
+      <p class="big">«No se trata de reemplazar a las personas con máquinas, sino de <em>potenciar a su organización con inteligencia</em>.»</p>
+      <p>La tecnología democratiza la ejecución, pero la estrategia, la empatía y la confianza humana siguen siendo el mayor lujo. El futuro pertenece a quienes orquestan ambos mundos.</p>
+      <span class="cta-strip">¿Comenzamos la transformación?</span>
+    </div>
+    <div class="contact-grid">
+      <div class="reveal">
+        <span class="eyebrow">Contacto estratégico</span>
+        <h3 style="font-size:1.5rem;margin:16px 0 8px">Kaprekar DigitalX</h3>
+        <p class="lead" style="font-size:.95rem">Consultora de Inteligencia de Conversión &amp; Arquitectura de Decisiones.<br>Bilbao, País Vasco · España</p>
+        <p class="lead" style="font-size:.95rem;margin-top:10px">✉ <a href="mailto:digitalx@kaprekar.ai" style="color:var(--gold2);border-bottom:1px dashed var(--line2)">digitalx@kaprekar.ai</a></p>
+        <ul class="next-steps">
+          <li><i>01</i><span>Auditoría express de su posición AEO/GEO y madurez de datos.</span></li>
+          <li><i>02</i><span>Roadmap personalizado de IA con presupuesto estimado y timeline.</span></li>
+          <li><i>03</i><span>Analyst Inquiry confidencial 1:1 con un estratega senior.</span></li>
+        </ul>
+      </div>
+      <form class="form-card reveal" style="--d:.12s" id="contactForm" novalidate>
+        <h3>Agendar Consulta de Estrategia</h3>
+        <p class="fs">Respuesta en menos de 24h laborables. Sus datos son First-Party desde el minuto uno: nunca se venden ni se comparten.</p>
+        <div class="f-row">
+          <label class="fg">Nombre<input type="text" id="fName" required placeholder="Su nombre"><span class="formLine"></span></label>
+          <label class="fg">Email corporativo<input type="email" id="fMail" required placeholder="nombre@empresa.com"><span class="formLine"></span></label>
+        </div>
+        <label class="fg">Empresa<input type="text" id="fComp" required placeholder="Nombre de la empresa"><span class="formLine"></span></label>
+        <label class="fg">Presupuesto estimado anual
+          <select id="fBudget"><option>Seleccionar…</option><option>&lt; 25.000 €</option><option>25.000 – 50.000 €</option><option>50.000 – 100.000 €</option><option>&gt; 100.000 €</option></select>
+          <span class="formLine"></span></label>
+        <label class="fg">Mensaje<textarea id="fMsg" placeholder="¿Cuál es su principal reto de conversión para 2026?"></textarea><span class="formLine"></span></label>
+        <button type="submit" class="btn btn-sweep" style="width:100%;justify-content:center">Solicitar Analyst Inquiry 1:1 <span aria-hidden="true">→</span></button>
+        <div class="form-ok" id="formOk"><b>Solicitud recibida</b><span style="color:var(--muted);font-size:.9rem">Un estratega senior le contactará en menos de 24h laborables con su auditoría express preliminar.</span></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="f-glow" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <div style="display:flex;align-items:center;gap:12px">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="f-word glitch" data-text="KAPREKAR DIGITALX">KAPREKAR<em>DigitalX</em></span>
+        </div>
+        <p class="f-tag">Inteligencia de Conversión &amp; Arquitectura de Decisiones. Como la constante de Kaprekar: tomamos el caos de sus datos y lo reordenamos hasta un resultado inevitable.</p>
+        <p class="f-const">6174 — la constante que reorganiza el caos.</p>
+        <span class="trajectory-badge">26 años de trayectoria</span>
+        <span class="trajectory-year">Desde 2000 · Bizkaia</span>
+        <div><span class="f-status"><span class="dot"></span><span>Aceptando clientes Q3 2026</span></span></div>
+      </div>
+      <div><h4>Navegación</h4><ul>
+        <li><a href="#motor">Modelo agéntico</a></li><li><a href="#servicios">Servicios</a></li>
+        <li><a href="#herramientas">Herramientas</a></li><li><a href="#roadmap">Roadmap</a></li><li><a href="#contacto">Contacto</a></li></ul></div>
+      <div><h4>Verticales</h4><ul>
+        <li>Intelligence &amp; Strategy</li><li>Content &amp; GEO</li><li>Technology &amp; Data</li><li>International &amp; China</li></ul></div>
+      <div><h4>Presencia</h4><ul>
+        <li>Bilbao, País Vasco · España</li><li><a href="mailto:digitalx@kaprekar.ai">digitalx@kaprekar.ai</a></li>
+        <li>Compliance GDPR 99.5%</li></ul>
+        <div class="f-ceo">
+          <span class="lbl">Dirección Estratégica</span>
+          <!-- PENDIENTE: URL real de LinkedIn -->
+          <a href="#" rel="noopener">Conectar en LinkedIn ↗</a>
+        </div>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <span>© <span id="year">2026</span> Kaprekar DigitalX. Todos los derechos reservados.</span>
+      <!-- PENDIENTE: URLs reales de las páginas legales -->
+      <div class="f-legal">
+        <a href="#">Aviso Legal</a><a href="#">Política de Privacidad</a><a href="#">Cookies</a>
+      </div>
+      <span>Privacy by design: su dato es First-Party desde el minuto uno.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- F · BACK TO TOP -->
+<button id="toTop" aria-label="Volver arriba">↑</button>
+
+<script>
+const RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* ============ A · PRELOADER v3 ============ */
+const pre=document.getElementById('preloader');
+let preShown=false;
+function hidePre(reason){ if(!pre||pre.dataset.done)return; pre.dataset.done='1';
+  pre.classList.add('hidden'); pre.style.pointerEvents='none';
+  setTimeout(()=>{pre&&pre.parentNode&&pre.parentNode.removeChild(pre)},700);
+}
+(function(){
+  if(RM||(navigator.connection&&navigator.connection.saveData)){
+    document.addEventListener('DOMContentLoaded',()=>hidePre('rm')); setTimeout(()=>hidePre('rm'),0); return;
+  }
+  let seen=false; try{seen=sessionStorage.getItem('kdx_pre')==='1'}catch(e){}
+  if(seen){ document.addEventListener('DOMContentLoaded',()=>hidePre('seen')); setTimeout(()=>hidePre('seen'),0); return; }
+  preShown=true; pre.classList.add('show'); document.body.classList.add('loading');
+  const fill=pre.querySelector('.pre-bar i'); let p=0;
+  const tick=setInterval(()=>{p=Math.min(100,p+Math.random()*22); if(fill)fill.style.width=p+'%'; if(p>=100)clearInterval(tick)},110);
+  const t0=performance.now(),MIN=800,MAX=2000;
+  const tryHide=r=>{const el=performance.now()-t0; el<MIN?setTimeout(()=>hidePre(r),MIN-el):hidePre(r)};
+  addEventListener('load',()=>tryHide('load'));
+  setTimeout(()=>tryHide('cap'),MAX);
+  try{sessionStorage.setItem('kdx_pre','1')}catch(e){}
+})();
+function maybeCookie(d){setTimeout(()=>{
+  const cb=document.getElementById('cookieBanner');
+  if(cb&&!localStorage.getItem('kdx-consent'))cb.classList.add('show');
+},d)}
+maybeCookie(preShown?1700:1500);
+function setConsent(v){localStorage.setItem('kdx-consent',v);const cb=document.getElementById('cookieBanner');cb&&cb.classList.remove('show')}
+document.getElementById('ckOk').addEventListener('click',()=>setConsent('all'));
+document.getElementById('ckNo').addEventListener('click',()=>setConsent('essential'));
+
+/* ============ NAV & PROGRESS & ACTIVE ============ */
+const nav=document.getElementById('nav'),prog=document.getElementById('progress');
+addEventListener('scroll',()=>{nav.classList.toggle('scrolled',scrollY>40);
+  const h=document.documentElement.scrollHeight-innerHeight; prog.style.width=(h>0?scrollY/h*100:0)+'%';
+},{passive:true});
+const burger=document.getElementById('burger'),links=document.getElementById('navLinks');
+burger.addEventListener('click',()=>links.classList.toggle('open'));
+links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));
+const navAs=[...document.querySelectorAll('.nav-links a[href^="#"]')];
+const secIO=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)
+  navAs.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+e.target.id));
+}),{rootMargin:'-45% 0px -50% 0px'});
+document.querySelectorAll('section[id]').forEach(s=>secIO.observe(s));
+
+/* ============ CURSOR CUSTOM ============ */
+if(matchMedia('(pointer:fine)').matches&&!RM){
+  document.documentElement.classList.add('cursor-on');
+  const d=document.getElementById('cursorDot'),r=document.getElementById('cursorRing');
+  let mx=innerWidth/2,my=innerHeight/2,rx=mx,ry=my;
+  addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;
+    d.style.transform=`translate3d(${mx}px,${my}px,0) translate(-50%,-50%)`;},{passive:true});
+  (function loop(){rx+=(mx-rx)*.16;ry+=(my-ry)*.16;
+    r.style.transform=`translate3d(${rx}px,${ry}px,0) translate(-50%,-50%)`;requestAnimationFrame(loop)})();
+  document.addEventListener('mouseover',e=>{
+    r.classList.toggle('grow',!!e.target.closest('a,button,input,select,textarea,.t-opt,.s-tab,.m-step,.faq-q'));},{passive:true});
+}
+
+/* ============ B · LUZ ESPECULAR ============ */
+if(matchMedia('(pointer:fine)').matches&&!RM){
+  document.addEventListener('mousemove',e=>{const t=e.target.closest('.card,.svc');if(!t)return;
+    const b=t.getBoundingClientRect();
+    t.style.setProperty('--mx',((e.clientX-b.left)/b.width*100).toFixed(1)+'%');
+    t.style.setProperty('--my',((e.clientY-b.top)/b.height*100).toFixed(1)+'%');
+  },{passive:true});
+}
+
+/* ============ TILT 3D ============ */
+if(matchMedia('(pointer:fine)').matches&&!RM){
+  document.querySelectorAll('.tilt').forEach(c=>{
+    c.addEventListener('mousemove',e=>{const b=c.getBoundingClientRect(),x=(e.clientX-b.left)/b.width,y=(e.clientY-b.top)/b.height;
+      c.style.transform=`perspective(900px) rotateX(${((y-.5)*-7).toFixed(2)}deg) rotateY(${((x-.5)*7).toFixed(2)}deg)`;
+      c.style.setProperty('--gx',(x*100).toFixed(1)+'%');c.style.setProperty('--gy',(y*100).toFixed(1)+'%');});
+    c.addEventListener('mouseleave',()=>c.style.transform='');
+  });
+}
+
+/* ============ REVEAL ============ */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+/* ============ COUNTERS ============ */
+function animateCount(el){const t=parseFloat(el.dataset.num),p2=el.dataset.prefix||'',suf=el.dataset.suffix||'',start=performance.now(),dur=1500;
+  (function frame(now){const p=Math.min((now-start)/dur,1),e=1-Math.pow(1-p,3);
+    el.textContent=p2+Math.round(t*e).toLocaleString('es-ES')+suf;if(p<1)requestAnimationFrame(frame);})(start);}
+const ioC=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){animateCount(e.target);ioC.unobserve(e.target)}}),{threshold:.5});
+document.querySelectorAll('.stat-n').forEach(el=>ioC.observe(el));
+
+/* ============ WEIGHT BARS ============ */
+const wWrap=document.querySelector('.weights');
+const ioW=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){
+  document.querySelectorAll('.w-row').forEach((r,i)=>setTimeout(()=>r.querySelector('.w-bar i').style.width=r.dataset.w+'%',i*160));
+  ioW.disconnect();}}),{threshold:.3});
+if(wWrap)ioW.observe(wWrap);
+
+/* ============ MOTOR STEPPER ============ */
+const steps=[...document.querySelectorAll('.m-step')],panes=[...document.querySelectorAll('.m-pane')];
+steps.forEach(b=>b.addEventListener('click',()=>{steps.forEach(s=>s.classList.remove('on'));panes.forEach(p=>p.classList.remove('on'));
+  b.classList.add('on');panes[+b.dataset.step].classList.add('on');}));
+
+/* ============ SERVICE TABS ============ */
+const tabs=[...document.querySelectorAll('.s-tab')],panels=[...document.querySelectorAll('.s-panel')];
+tabs.forEach(t=>t.addEventListener('click',()=>{tabs.forEach(x=>x.classList.remove('on'));panels.forEach(p=>p.classList.remove('on'));
+  t.classList.add('on');panels[+t.dataset.tab].classList.add('on');}));
+
+/* ============ TEST DE MADUREZ ============ */
+const TEST=[
+ {dim:'Estrategia',q:'¿Su organización cuenta con una hoja de ruta de IA con presupuesto asignado para los próximos 12 meses?',opts:[
+  {t:'No existe ni está prevista',s:0},{t:'Está en discusión, sin presupuesto',s:1},
+  {t:'Hoja de ruta definida, sin presupuesto asignado',s:2},{t:'Hoja de ruta + presupuesto asignado',s:3}]},
+ {dim:'Alfabetización',q:'¿Comprende su liderazgo (C-Suite) las limitaciones y el potencial estratégico de la IA Agéntica?',opts:[
+  {t:'No: se percibe como una moda pasajera',s:0},{t:'Interés, sin formación estructurada',s:1},
+  {t:'Formación parcial del equipo directivo',s:2},{t:'Programa de AI Literacy activo',s:3}]},
+ {dim:'Datos',q:'¿Están sus datos de marketing centralizados o fragmentados en silos de datos inaccesibles?',opts:[
+  {t:'Fragmentados e inaccesibles (Data Silos)',s:0},{t:'Parcialmente centralizados',s:1},
+  {t:'Centralizados, sin activación predictiva',s:2},{t:'CDP + First/Zero-Party Data operativo',s:3}]},
+ {dim:'Operaciones',q:'¿Utiliza actualmente agentes de IA para automatizar tareas críticas de la ruta de compra?',opts:[
+  {t:'No, todo es manual',s:0},{t:'Herramientas de IA puntuales (generativa)',s:1},
+  {t:'Automatizaciones simples en producción',s:2},{t:'Agentes autónomos con supervisión (HITL)',s:3}]},
+ {dim:'Visión 2026',q:'¿Cómo planea responder a la caída de clics orgánicos por la búsqueda generativa (25–40% del tráfico)?',opts:[
+  {t:'Sin plan: seguimos con SEO clásico',s:0},{t:'Monitorizamos el impacto',s:1},
+  {t:'Piloto de optimización AEO en curso',s:2},{t:'Estrategia GEO/AEO integral desplegada',s:3}]}
+];
+let ti=0,answers=[];
+const testBody=document.getElementById('testBody');
+function renderQ(){
+  const q=TEST[ti];
+  testBody.innerHTML=`
+   <div class="t-progress"><span>pregunta ${ti+1} / ${TEST.length}</span><span>${q.dim}</span></div>
+   <div class="t-dots">${TEST.map((_,d)=>`<i class="${d<=ti?'on':''}"></i>`).join('')}</div>
+   <p class="t-q">${q.q}</p>
+   <div class="t-opts">${q.opts.map((o,oi)=>`<button class="t-opt" data-s="${o.s}"><span class="t-key">${'ABCD'[oi]}</span>${o.t}</button>`).join('')}</div>
+   ${ti>0?'<button class="t-back" id="tBack">← pregunta anterior</button>':''}`;
+  testBody.querySelectorAll('.t-opt').forEach(b=>b.addEventListener('click',()=>{answers[ti]=+b.dataset.s;ti++;ti<TEST.length?renderQ():renderResult()}));
+  const back=document.getElementById('tBack');if(back)back.addEventListener('click',()=>{ti--;renderQ()});
+}
+function renderResult(){
+  const score=answers.reduce((a,b)=>a+b,0),C=327,off=C*(1-score/15);
+  const tiers=[
+   {min:0,name:'Nivel 1 · Emergente — Riesgo Crítico',d:'Su organización opera bajo el modelo de ejecución manual que 2026 vuelve obsoleto. Sin una arquitectura de datos y criterio, cada trimestre amplía la brecha competitiva.',r:'Auditar y Proteger: gobernanza de datos, First-Party y cumplimiento ético como prioridad #1.'},
+   {min:5,name:'Nivel 2 · En Transición',d:'Dispone de piezas valiosas, pero sin arquitectura integrada: la ejecución sigue siendo táctica y los silos de datos drenan el ROI ante el directorio.',r:'Adaptar Modelos: laboratorio de IA con 3 flujos de trabajo clave y KPIs claros.'},
+   {min:9,name:'Nivel 3 · Agéntico en Despliegue',d:'Ya automatizan con criterio. El reto ahora es institucionalizar HITL y escalar a los tres dominios de agentes.',r:'Integrar e Innovar: desplegar IA agéntica para liberar el talento creativo humano.'},
+   {min:13,name:'Nivel 4 · Arquitecto de Decisiones',d:'Está en posición de liderar la transformación sistémica. El siguiente paso es monetizar la ventaja: dominio AEO/GEO y precios basados en valor.',r:'Evolución del Valor: orquestación, propiedad intelectual y contratos de socio estratégico.'}
+  ];
+  const tier=tiers.filter(t=>score>=t.min).pop();
+  testBody.innerHTML=`
+   <div class="t-result">
+    <div class="t-ring"><svg viewBox="0 0 120 120" width="150" height="150"><circle class="track" cx="60" cy="60" r="52"/><circle class="fill" id="scoreRing" cx="60" cy="60" r="52"/></svg><div class="t-score">${score}<small>/15</small></div></div>
+    <div class="t-tier">${tier.name}</div>
+    <p class="t-desc">${tier.d}</p>
+    <div class="t-rec"><b>Fase recomendada:</b> ${tier.r}</div>
+    <a href="#contacto" class="btn btn-gold" style="width:100%;justify-content:center">Solicitar su AI Strategy Roadmap</a>
+    <button class="t-back" id="tRestart" style="margin-top:14px">↻ Repetir el test</button>
+   </div>`;
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{document.getElementById('scoreRing').style.strokeDashoffset=off}));
+  document.getElementById('tRestart').addEventListener('click',()=>{ti=0;answers=[];renderQ()});
+}
+renderQ();
+
+/* ============ CALCULADORA ROI ============ */
+const fmt=new Intl.NumberFormat('es-ES',{style:'currency',currency:'EUR',maximumFractionDigits:0});
+const pf=n=>n.toLocaleString('es-ES',{maximumFractionDigits:1})+'%';
+const ids=['cInv','cCpl','cClose','cLtv','cOpt'].map(i=>document.getElementById(i));
+function compute(inv,cpl,close,ltv){const leads=cpl>0?inv/cpl:0,clients=leads*close,rev=clients*ltv;
+  return{leads,clients,rev,roi:inv>0?(rev-inv)/inv*100:0,roas:inv>0?rev/inv:0};}
+function calc(){
+  const inv=+ids[0].value||0,cpl=+ids[1].value||1,close=(+ids[2].value||0)/100,ltv=+ids[3].value||0,opt=(+ids[4].value)/100;
+  document.getElementById('cOptOut').textContent=ids[4].value+'%';
+  const b=compute(inv,cpl,close,ltv),o=compute(inv,cpl*(1-opt),close,ltv);
+  const set=(p,v)=>{document.getElementById(p).textContent=v};
+  set('bLeads',Math.round(b.leads).toLocaleString('es-ES'));set('bClients',b.clients.toFixed(1));set('bRev',fmt.format(b.rev));set('bRoi',pf(b.roi));set('bRoas',b.roas.toFixed(2)+'×');
+  set('oLeads',Math.round(o.leads).toLocaleString('es-ES'));set('oClients',o.clients.toFixed(1));set('oRev',fmt.format(o.rev));set('oRoi',pf(o.roi));set('oRoas',o.roas.toFixed(2)+'×');
+  const dRev=o.rev-b.rev,dRoi=o.roi-b.roi;
+  document.getElementById('cDelta').innerHTML=`<b>Impacto proyectado:</b> ${fmt.format(Math.max(0,dRev))} de ingresos mensuales adicionales · ROI pasa de ${pf(b.roi)} a <b>${pf(o.roi)}</b> (+${dRoi.toLocaleString('es-ES',{maximumFractionDigits:1})} pts) con una reducción de CPL del ${ids[4].value}%.`;
+}
+ids.forEach(i=>i.addEventListener('input',calc));calc();
+
+/* ============ FAQ ============ */
+document.querySelectorAll('.faq-q').forEach(q=>q.addEventListener('click',()=>{
+  const item=q.parentElement,a=item.querySelector('.faq-a'),open=item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(i=>{i.classList.remove('open');i.querySelector('.faq-a').style.maxHeight=null});
+  if(!open){item.classList.add('open');a.style.maxHeight=a.scrollHeight+'px'}
+}));
+
+/* ============ FORM ============ */
+document.getElementById('contactForm').addEventListener('submit',e=>{
+  e.preventDefault();
+  const n=document.getElementById('fName'),m=document.getElementById('fMail'),c=document.getElementById('fComp');
+  if(!n.value.trim()||!m.value.includes('@')||!c.value.trim()){
+    [n,m,c].forEach(f=>{if(!f.value.trim()||(f===m&&!f.value.includes('@')))f.style.borderColor='var(--terra)'});return;
+  }
+  e.target.querySelectorAll('label,input,select,textarea,button').forEach(x=>x.style.display='none');
+  document.getElementById('formOk').style.display='block';
+});
+
+/* ============ TEMA TIPOGRÁFICO ============ */
+const FONT_KEY='kdx_font';
+const EDITORIAL_HREF='https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Syne:wght@400;500;600;700;800&display=swap';
+function ensureEditorialFonts(){ if(!document.getElementById('edFonts')){
+  const l=document.createElement('link');l.id='edFonts';l.rel='stylesheet';l.href=EDITORIAL_HREF;document.head.appendChild(l);}}
+const fontBtn=document.getElementById('fontToggle');
+function applyFont(mode,persist){
+  if(mode==='editorial')ensureEditorialFonts();
+  document.documentElement.setAttribute('data-font',mode);
+  fontBtn.setAttribute('aria-pressed',mode==='editorial');
+  if(persist){try{localStorage.setItem(FONT_KEY,mode)}catch(e){}}
+}
+fontBtn.addEventListener('click',()=>{
+  const next=document.documentElement.getAttribute('data-font')==='editorial'?'tech':'editorial';
+  applyFont(next,true);
+});
+if(!document.documentElement.hasAttribute('data-font'))applyFont('tech',false);
+
+/* ============ F · BACK TO TOP ============ */
+const toTop=document.getElementById('toTop');
+addEventListener('scroll',()=>toTop.classList.toggle('show',scrollY>900),{passive:true});
+toTop.addEventListener('click',()=>scrollTo({top:0,behavior:RM?'auto':'smooth'}));
+
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
